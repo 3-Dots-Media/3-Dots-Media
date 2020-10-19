@@ -1,0 +1,24 @@
+{
+  "name": "reactmedia",
+  "version": "1.0.0",
+  "description": "React Media",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --recursive -o assets/styles/css/ assets/styles/sass/ -w",
+    "serve": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabibarzu/ReactMedia.git"
+  },
+  "author": "React Media Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabibarzu/ReactMedia/issues"
+  },
+  "homepage": "https://github.com/gabibarzu/ReactMedia#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  }
+}
