@@ -2,3 +2,16 @@
 
 @import "_colors.scss";
 @import "~bootstrap/scss/bootstrap";
+
+$material-icons-font-path: "~material-icons/iconfont/";
+@import "~material-icons/iconfont/material-icons.scss";
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+html,
+body {
+  font-family: Montserrat;
+}
