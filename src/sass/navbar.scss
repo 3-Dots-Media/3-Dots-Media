@@ -1,25 +1,21 @@
-@import "_colors.scss";
+@import "_main.scss";
 
-.full-container {
-  background-image: url("../../assets/inspiration-ideas-design-creative-thinking-word.png");
-  background-position: center;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+.react-media-navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .nav-link {
+    font-size: 22px;
+    color: $contrast-color !important;
+    @include transition;
+
+    &:hover {
+      font-weight: 700;
+      color: $primary-color !important;
+    }
+  }
 }
 
-nav::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -5;
-  background-color: #000000;
-  opacity: 0.7;
-}
-
-.nav-color > li > a {
-  color: $white;
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
