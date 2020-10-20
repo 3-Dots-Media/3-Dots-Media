@@ -7,4 +7,70 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/hero.png");
+  margin: 0;
+  border-radius: 0;
+}
+
+.section {
+  padding: 100px 0px;
+  text-align: center;
+
+  .section-header {
+    border-bottom: 3px solid $primary-color;
+  }
+
+  .title {
+    font-size: 50px;
+    padding-bottom: 50px;
+
+    .title-highlight {
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+
+  .description {
+    font-size: 22px;
+    line-height: normal;
+    padding-bottom: 50px;
+  }
+}
+
+.section-our-services {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/our-services.png");
+}
+
+.section-how-we-do {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/how-we-do.png");
+}
+
+.tile {
+  margin: 50px 0;
+
+  .tile-text {
+    color: $primary-color;
+    font-size: 70px;
+    font-weight: bold;
+  }
+
+  .tile-image {
+    margin: 0 0 40px 0;
+  }
+
+  .tile-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+  }
+
+  .tile-description {
+    font-size: 22px;
+    line-height: normal;
+  }
 }
