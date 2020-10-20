@@ -1,11 +1,30 @@
 {
   "name": "reactmedia",
   "version": "1.0.0",
-  "description": "React Media",
+  "description": "",
   "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.4.10",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "^4.5.3",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "file-loader": "^3.0.1",
+    "jquery": "^3.5.1",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.17.2",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
   "scripts": {
-    "sass": "node-sass --recursive -o assets/styles/css/ assets/styles/sass/ -w",
-    "serve": "live-server"
+    "build": "webpack --config webpack.config.js",
+    "server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -17,8 +36,5 @@
     "url": "https://github.com/gabibarzu/ReactMedia/issues"
   },
   "homepage": "https://github.com/gabibarzu/ReactMedia#readme",
-  "devDependencies": {
-    "live-server": "^1.2.1",
-    "node-sass": "^4.14.1"
-  }
+  "dependencies": {}
 }
