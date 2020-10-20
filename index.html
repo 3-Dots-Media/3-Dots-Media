@@ -1,46 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <!-- Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
     <title>React Media</title>
-
-    <link rel="stylesheet" href="dist/bundle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dist/bundle.css" />
     <script src="dist/bundle.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="jumbotron text-center">
-        <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p>
-    </div>
+  <body>
+    <div class="full-container">
+      <nav class="navbar navbar-expand-lg position-relative">
+        <div class="container">
+          <div class="col-xl-6">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="./assets/react-media-logo.png"
+                alt="React Media"
+                height="59px"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
+          <div
+            class="collapse navbar-collapse col-xl-6 justify-content-end"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav nav-color">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acasa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicii</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portofoliu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Despre noi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </div>
-</body>
-
+  </body>
 </html>
