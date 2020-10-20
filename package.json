@@ -14,6 +14,7 @@
     "file-loader": "^3.0.1",
     "jquery": "^3.5.1",
     "live-server": "^1.2.1",
+    "material-icons": "^0.3.1",
     "mini-css-extract-plugin": "^0.5.0",
     "popper.js": "^1.16.1",
     "postcss-loader": "^3.0.0",
