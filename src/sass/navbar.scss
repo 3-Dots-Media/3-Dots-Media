@@ -1,7 +1,7 @@
 @import "_colors.scss";
 
-body {
-  background-image: url("../images/inspiration-ideas-design-creative-thinking-word.png");
+.full-container {
+  background-image: url("../../assets/inspiration-ideas-design-creative-thinking-word.png");
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -22,8 +22,4 @@ nav::before {
 
 .nav-color > li > a {
   color: $white;
-}
-
-.navbar-toggler > span {
-  color: white;
 }
