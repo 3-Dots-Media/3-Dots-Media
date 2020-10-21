@@ -12,7 +12,7 @@
 }
 
 .section {
-  padding: 100px 0px;
+  padding: 50px 0px;
   text-align: center;
 
   .section-header {
@@ -99,6 +99,7 @@
 }
 
 .img-effect {
+  border-radius: $border-radius-size;
   filter: grayscale(1);
   @include react-transition;
 
@@ -116,4 +117,41 @@
 ::selection {
   background: $primary-color;
   color: $contrast-color;
+}
+
+// React card
+.react-card {
+  color: $contrast-color;
+  background-color: $primary-color;
+  border-radius: $border-radius-size;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+  .react-card-image {
+    img {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      width: 300px;
+      margin-top: -50px;
+      border-radius: $border-radius-size;
+    }
+  }
+
+  .react-card-title {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .react-card-subtitle {
+    color: $gray;
+    font-style: italic;
+  }
+
+  .react-card-description {
+    padding-top: 20px;
+    line-height: normal;
+  }
+
+  .react-card-body {
+  }
 }
