@@ -5,8 +5,9 @@
 
   .nav-link {
     font-size: 20px;
+    font-weight: 700;
     color: $contrast-color !important;
-    @include transition;
+    @include react-transition;
 
     &:hover {
       font-weight: 700;
@@ -49,7 +50,7 @@
       color: $black;
       font-weight: bold;
       border: 1px solid $primary-color;
-      @include transition;
+      @include react-transition;
 
       &:hover:not(.active) {
         color: $primary-color;
