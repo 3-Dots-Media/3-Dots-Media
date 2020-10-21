@@ -19,6 +19,7 @@ label:focus,
 
 .form-control {
   background-color: $gray !important;
+  border-radius: $border-radius-size !important;
   @include react-transition();
 }
 
@@ -28,7 +29,7 @@ label:focus,
 }
 
 .section-colored {
-  S .form-control:focus {
+  .form-control:focus {
     border-color: $black !important;
   }
 }

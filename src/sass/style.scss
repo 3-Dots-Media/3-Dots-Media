@@ -153,5 +153,19 @@
   }
 
   .react-card-body {
+    .social-link {
+      color: $contrast-color;
+      text-decoration: none;
+      padding-bottom: 5px;
+      @include react-transition;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        box-shadow: inset 0 -1px 0 0 $contrast-color;
+      }
+    }
   }
 }
