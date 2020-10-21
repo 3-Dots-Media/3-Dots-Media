@@ -2,7 +2,7 @@
 
 .react-btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: normal;
   color: $primary-color;
   text-align: center;
   vertical-align: middle;
@@ -26,7 +26,6 @@
 }
 
 .react-btn-link {
-  font-weight: bold;
   text-decoration: none;
   box-shadow: inset 0 -1px 0 0 $primary-color;
 
