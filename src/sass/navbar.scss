@@ -19,3 +19,49 @@
   outline: none;
   box-shadow: none;
 }
+
+// Nav and pills
+@media (max-width: 768px) {
+  .nav-pills {
+    justify-content: center;
+    flex-direction: column;
+
+    .nav-item {
+      margin-right: 0px !important;
+
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.nav-pills {
+  justify-content: center;
+  margin-top: 50px;
+
+  .nav-item {
+    &:not(:last-of-type) {
+      margin-right: 50px;
+    }
+
+    .nav-link {
+      color: $black;
+      font-weight: bold;
+      border: 1px solid $primary-color;
+      @include transition;
+
+      &:hover:not(.active) {
+        color: $primary-color;
+      }
+
+      &.active {
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.tab-content {
+  margin-top: 50px;
+}

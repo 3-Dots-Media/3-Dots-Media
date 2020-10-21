@@ -74,3 +74,13 @@
     line-height: normal;
   }
 }
+
+.img-effect {
+  filter: grayscale(1);
+  @include transition;
+
+  &:hover {
+    cursor: pointer;
+    filter: grayscale(0);
+  }
+}
