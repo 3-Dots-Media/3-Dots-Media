@@ -34,6 +34,17 @@
     line-height: normal;
     padding-bottom: 50px;
   }
+
+  .contrast {
+    color: $contrast-color;
+  }
+
+  .copyright {
+    font-size: 22px;
+    padding-top: 50px;
+    line-height: normal;
+    font-style: italic;
+  }
 }
 
 .section-our-services {
@@ -48,6 +59,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/how-we-do.png");
+}
+
+.section-colored {
+  background-color: $primary-color;
 }
 
 .tile {
