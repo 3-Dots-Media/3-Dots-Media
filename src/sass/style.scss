@@ -34,14 +34,26 @@
     line-height: normal;
     padding-bottom: 50px;
   }
+}
 
-  .contrast {
+.section-colored {
+  background-color: $primary-color;
+
+  .section-header {
+    border-bottom: 3px solid $contrast-color;
+  }
+
+  .title {
+    color: $contrast-color;
+  }
+
+  .description {
     color: $contrast-color;
   }
 
   .copyright {
+    color: $contrast-color;
     font-size: 22px;
-    padding-top: 50px;
     line-height: normal;
     font-style: italic;
   }
@@ -59,10 +71,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/how-we-do.png");
-}
-
-.section-colored {
-  background-color: $primary-color;
 }
 
 .tile {
@@ -92,10 +100,20 @@
 
 .img-effect {
   filter: grayscale(1);
-  @include transition;
+  @include react-transition;
 
   &:hover {
     cursor: pointer;
     filter: grayscale(0);
   }
+}
+
+::-moz-selection {
+  background: $primary-color;
+  color: $contrast-color;
+}
+
+::selection {
+  background: $primary-color;
+  color: $contrast-color;
 }

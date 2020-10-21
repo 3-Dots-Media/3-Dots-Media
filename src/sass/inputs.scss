@@ -1,0 +1,34 @@
+@import "_main.scss";
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.form-control {
+  background-color: $gray !important;
+  @include react-transition();
+}
+
+.form-control:focus {
+  background-color: $contrast-color !important;
+  border-color: $primary-color !important;
+}
+
+.section-colored {
+  S .form-control:focus {
+    border-color: $black !important;
+  }
+}

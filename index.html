@@ -1,417 +1,299 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
 
-    <!-- Favicons-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+<head>
+  <meta charset="utf-8" />
 
-    <title>React Media</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="dist/bundle.css" />
-    <script src="dist/bundle.js"></script>
-  </head>
+  <!-- Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="50">
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-md navbar-dark react-media-navbar fixed-top"
-    >
-      <a class="navbar-brand" href="/"
-        ><img
-          src="./assets/react-media-logo.png"
-          alt="React Media"
-          height="50px"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acasa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Servicii</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Portofoliu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#how-we-do">Despre noi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div id="acasa" class="jumbotron parallax"></div>
+  <title>React Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="dist/bundle.css" />
+  <script src="dist/bundle.js"></script>
+</head>
 
-    <div class="container-fluid">
-      <section id="services" class="row section section-our-services">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-header">
-                <h1 class="title">
-                  Servicii <span class="title-highlight">oferite</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-12">
-              <div class="tile">
-                <div class="tile-image">
-                  <img
-                    src="assets/services/graphic-design.png"
-                    alt="Grafic designer"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="tile-title">Grafic designer</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="tile">
-                <div class="tile-image">
-                  <img
-                    src="assets/services/copy-right.png"
-                    alt="Copy write"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="tile-title">Copy write</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="tile">
-                <div class="tile-image">
-                  <img
-                    src="assets/services/web-responsive.png"
-                    alt="Web responsive"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="tile-title">Web responsive</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark react-media-navbar fixed-top">
+    <a class="navbar-brand" href="/"><img src="./assets/react-media-logo.png" alt="React Media" height="50px" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acasa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Servicii</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Portofoliu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#how-we-do">Despre noi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="acasa" class="jumbotron parallax"></div>
 
-      <section id="projects" class="row section">
-        <div class="container">
-          <div class="row">
+  <div class="container-fluid">
+    <section id="services" class="row section section-our-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
             <div class="section-header">
-              <div class="col-12">
-                <h1 class="title">
-                  <span class="title-highlight">Proiectele</span> noastre
-                </h1>
-                <h5 class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Quis ipsum
-                  suspendisse ultrices gravida. Risus commodo viverra maecenas
-                  accumsan lacus vel facilisis.
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="pills-branding-tab"
-                    data-toggle="pill"
-                    href="#pills-branding"
-                    role="tab"
-                    aria-controls="pills-branding"
-                    aria-selected="true"
-                    >Branding</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="pills-web-tab"
-                    data-toggle="pill"
-                    href="#pills-web"
-                    role="tab"
-                    aria-controls="pills-web"
-                    aria-selected="false"
-                    >Web</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="pills-social-media-tab"
-                    data-toggle="pill"
-                    href="#pills-social-media"
-                    role="tab"
-                    aria-controls="pills-social-media"
-                    aria-selected="false"
-                    >Social media</a
-                  >
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-branding"
-                  role="tabpanel"
-                  aria-labelledby="pills-branding-tab"
-                >
-                  <div class="row">
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-web"
-                  role="tabpanel"
-                  aria-labelledby="pills-web-tab"
-                >
-                  <div class="row">
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-social-media"
-                  role="tabpanel"
-                  aria-labelledby="pills-social-media-tab"
-                >
-                  <div class="row">
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                    <div class="col-lg-4 col-12 mb-3">
-                      <img
-                        src="https://loremflickr.com/300/300"
-                        class="img-fluid img-effect"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a
-                href="/projects"
-                class="react-btn react-btn-lg react-btn-link mt-5"
-                >See more</a
-              >
+              <h1 class="title">
+                Servicii <span class="title-highlight">oferite</span>
+              </h1>
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="how-we-do" class="row section section-how-we-do">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-header">
-                <h1 class="title">
-                  Cum <span class="title-highlight">procedam</span>
-                </h1>
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="tile">
+              <div class="tile-image">
+                <img src="assets/services/graphic-design.png" alt="Grafic designer" class="img-fluid" />
+              </div>
+              <div class="tile-title">Grafic designer</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
               </div>
             </div>
           </div>
-          <div class="row text-left">
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="tile">
-                <div class="tile-text">01</div>
-                <div class="tile-title">Research</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
+          <div class="col-lg-4 col-12">
+            <div class="tile">
+              <div class="tile-image">
+                <img src="assets/services/copy-right.png" alt="Copy write" class="img-fluid" />
+              </div>
+              <div class="tile-title">Copy write</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="tile">
-                <div class="tile-text">02</div>
-                <div class="tile-title">Analiza</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="tile">
+              <div class="tile-image">
+                <img src="assets/services/web-responsive.png" alt="Web responsive" class="img-fluid" />
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="tile">
-                <div class="tile-text">03</div>
-                <div class="tile-title">Proiectare</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="tile">
-                <div class="tile-text">04</div>
-                <div class="tile-title">Livrare</div>
-                <div class="tile-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
+              <div class="tile-title">Web responsive</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact-us" class="row section section-colored">
-        <div class="container">
-          <div class="row">
+    <section id="projects" class="row section">
+      <div class="container">
+        <div class="row">
+          <div class="section-header">
             <div class="col-12">
-              <div class="section-header">
-                <h1 class="title contrast">Contacteaza-ne</h1>
-                <h5 class="description contrast">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-12">
-              <input type="text" placeholder="Aici vine ce vrea Razvi" />
-            </div>
-            <div class="col-lg-4 col-12">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Nume" />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Telefon"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    rows="5"
-                    placeholder="Mesajul tau"
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-outline-light">
-                  Trimite
-                </button>
-              </form>
-            </div>
-            <div class="col-lg-4 col-12">
-              <input type="text" placeholder="Aici vine harta" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <h5 class="copyright contrast">
-                Copyright 2020-2021 React Media
+              <h1 class="title">
+                <span class="title-highlight">Proiectele</span> noastre
+              </h1>
+              <h5 class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Quis ipsum
+                suspendisse ultrices gravida. Risus commodo viverra maecenas
+                accumsan lacus vel facilisis.
               </h5>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-  </body>
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" id="pills-branding-tab" data-toggle="pill" href="#pills-branding" role="tab"
+                  aria-controls="pills-branding" aria-selected="true">Branding</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab"
+                  aria-controls="pills-web" aria-selected="false">Web</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-social-media-tab" data-toggle="pill" href="#pills-social-media" role="tab"
+                  aria-controls="pills-social-media" aria-selected="false">Social media</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-branding" role="tabpanel"
+                aria-labelledby="pills-branding-tab">
+                <div class="row">
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
+                <div class="row">
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-social-media" role="tabpanel"
+                aria-labelledby="pills-social-media-tab">
+                <div class="row">
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3">
+                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="/projects" class="react-btn react-btn-lg react-btn-link mt-5">See more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-we-do" class="row section section-how-we-do">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header">
+              <h1 class="title">
+                Cum <span class="title-highlight">procedam</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row text-left">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="tile">
+              <div class="tile-text">01</div>
+              <div class="tile-title">Research</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="tile">
+              <div class="tile-text">02</div>
+              <div class="tile-title">Analiza</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="tile">
+              <div class="tile-text">03</div>
+              <div class="tile-title">Proiectare</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="tile">
+              <div class="tile-text">04</div>
+              <div class="tile-title">Livrare</div>
+              <div class="tile-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="row section section-colored">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header">
+              <h1 class="title contrast">Contacteaza-ne</h1>
+              <h5 class="description contrast">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-12">
+          </div>
+          <div class="col-lg-4 col-12">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nume" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Telefon" />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Mesajul tau"></textarea>
+              </div>
+              <button type="submit" class="react-btn react-btn-lg react-btn-outline-light mt-3">
+                Trimite
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-4 col-12">
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <h5 class="copyright">
+              Copyright
+              <script>document.write(new Date().getFullYear());</script> React Media
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>

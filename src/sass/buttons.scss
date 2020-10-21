@@ -13,7 +13,7 @@
   font-size: 1rem;
   line-height: 1.5;
   outline: none;
-  @include transition;
+  @include react-transition;
 
   &:focus {
     outline: none;
@@ -26,11 +26,24 @@
 }
 
 .react-btn-link {
+  font-weight: bold;
   text-decoration: none;
+  box-shadow: inset 0 -1px 0 0 $primary-color;
 
   &:hover {
     text-decoration: none;
     color: $primary-color;
-    box-shadow: inset 0 -2px 0 0 $primary-color;
+    box-shadow: inset 0 -3px 0 0 $primary-color;
+  }
+}
+
+.react-btn-outline-light {
+  border-radius: 0.25rem;
+  color: $contrast-color;
+  border-color: $contrast-color;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $contrast-color;
   }
 }
