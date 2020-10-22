@@ -1,6 +1,7 @@
 @import "_main.scss";
 
 .react-media-navbar {
+  max-height: 75px;
   background-color: rgba(0, 0, 0, 0.7);
 
   .nav-link {

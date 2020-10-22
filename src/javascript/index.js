@@ -13,5 +13,8 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
-import { initMap } from "./map.js";
-window.onload = initMap;
+import { initMap, scroll } from "./utils.js";
+window.onload = function () {
+    initMap();
+    scroll();
+}
