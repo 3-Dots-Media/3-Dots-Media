@@ -183,7 +183,7 @@
                 </div>
               </div>
             </div>
-            <a href="/projects" class="react-btn react-btn-lg react-btn-link mt-5"><i
+            <a href="/projects" class="react-btn react-btn-lg react-btn-link mt-5 see-more"><i
                 class="fas fa-angle-double-left"></i> Vezi mai multe <i class="fas fa-angle-double-right"></i></a>
           </div>
         </div>
@@ -332,19 +332,33 @@
         <div class="row">
           <div class="col-12">
             <div class="section-header">
-              <h1 class="title contrast">Contacteaza-ne</h1>
-              <h5 class="description contrast">
+              <h1 class="title">Contacteaza-ne</h1>
+              <h5 class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </h5>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-lg-4 col-12">
-          </div>
-          <div class="col-lg-4 col-12">
-            <form>
+        <form>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-12 text-left">
+              <a href="tel: +40754821311" class="contact-link"><i class="fas fa-phone"></i> 0754.821.311 - Razvan</a>
+              <a href="mailto: razvan@reactmedia.ro" class="contact-link"><i class="fas fa-envelope"></i>
+                razvan@reactmedia.ro</a>
+              <hr>
+              <a href="tel: +40754821311" class="contact-link"><i class="fas fa-phone"></i> 0754.821.311 - Lucian</a>
+              <a href="mailto: lucian@reactmedia.ro" class="contact-link"><i class="fas fa-envelope"></i>
+                lucian@reactmedia.ro</a>
+              <hr>
+              <a href="tel: +40754821311" class="contact-link"><i class="fas fa-phone"></i> 0754.821.311 - Gabriel</a>
+              <a href="mailto: gabriel@reactmedia.ro" class="contact-link"><i class="fas fa-envelope"></i>
+                gabriel@reactmedia.ro</a>
+              <hr>
+              <a href="/" class="contact-link"><i class="fas fa-map-pin"></i> Str Palat nr. 3C, Iași 700032</a>
+              <hr>
+            </div>
+            <div class="col-lg-4 col-12">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Nume" />
               </div>
@@ -355,27 +369,41 @@
                 <input type="email" class="form-control" placeholder="Email" />
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Mesajul tau"></textarea>
+                <textarea class="form-control" rows="7" placeholder="Mesajul tau"></textarea>
               </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div id="googleMap" class="map-container"></div>
+            </div>
+            <div class="col-12">
               <button type="submit" class="react-btn react-btn-lg react-btn-outline-light mt-3">
                 Trimite
               </button>
-            </form>
+            </div>
           </div>
-          <div class="col-lg-4 col-12">
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-us" class="row section">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="description p-0 text-left"> Copyright
+              <script>document.write(new Date().getFullYear());</script> <strong class="react-text-primary">React
+                Media</strong></h5>
           </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12">
-            <h5 class="copyright">
-              Copyright
-              <script>document.write(new Date().getFullYear());</script> React Media
-            </h5>
+          <div class="col-6">
+            <h5 class="description p-0 text-right">Urmareste-ne pe:
+              <a href="/" class="social-link"><i class="fab fa-facebook"></i></a><a href="/" class="social-link"><i
+                  class="fab fa-instagram"></i></a></h5>
           </div>
         </div>
       </div>
     </section>
   </div>
 </body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs47BpxXWaDt3L6z-5FihaptHtz3v_KPA"
+  type="text/javascript"></script>
 
 </html>
