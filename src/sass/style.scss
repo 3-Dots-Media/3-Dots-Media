@@ -9,6 +9,18 @@
   background-image: url("../images/hero.png");
   margin: 0;
   border-radius: 0;
+  animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    filter: grayscale(1);
+    opacity: 0;
+  }
+  100% {
+    filter: grayscale(0);
+    opacity: 1;
+  }
 }
 
 .section {
@@ -51,11 +63,8 @@
     color: $contrast-color;
   }
 
-  .copyright {
-    color: $contrast-color;
-    font-size: 22px;
-    line-height: normal;
-    font-style: italic;
+  hr {
+    border-color: $contrast-color;
   }
 }
 
@@ -119,6 +128,53 @@
   color: $contrast-color;
 }
 
+.social-link {
+  color: $primary-color;
+  text-decoration: none;
+  @include react-transition;
+  margin-left: 5px;
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.contact-link {
+  display: block;
+  color: $contrast-color;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  @include react-transition;
+
+  &:hover {
+    color: $contrast-color;
+    text-decoration: none;
+  }
+}
+
+.see-more {
+  @include react-transition;
+  .fa-angle-double-left,
+  .fa-angle-double-right {
+    @include react-transition;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover {
+    .fa-angle-double-left,
+    .fa-angle-double-right {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
 // React card
 .react-card {
   color: $contrast-color;
@@ -156,6 +212,7 @@
       color: $contrast-color;
       text-decoration: none;
       padding-bottom: 5px;
+      margin-left: 0;
       @include react-transition;
 
       &:not(:last-of-type) {
@@ -167,4 +224,15 @@
       }
     }
   }
+}
+
+// Text
+.react-text-primary {
+  color: $primary-color;
+}
+
+.map-container {
+  border-radius: $border-radius-size;
+  height: calc(100% - 1rem);
+  width: 100%;
 }
