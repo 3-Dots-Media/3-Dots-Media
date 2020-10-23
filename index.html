@@ -1,412 +1,555 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
+    <!-- Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
-  <!-- Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <title>React Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dist/bundle.css" />
+    <script src="dist/bundle.js"></script>
+  </head>
 
-  <title>React Media</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="dist/bundle.css" />
-  <script src="dist/bundle.js"></script>
-</head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="50">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-md navbar-dark react-media-navbar fixed-top"
+    >
+      <a class="navbar-brand" href="/"
+        ><img
+          src="./assets/react-media-logo.png"
+          alt="React Media"
+          height="50px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#home">Acas&#259;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#services">Servicii</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#projects">Portofoliu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#our-team">Despre noi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="50">
-  <nav id="navbar" class="navbar navbar-expand-md navbar-dark react-media-navbar fixed-top">
-    <a class="navbar-brand" href="/"><img src="./assets/react-media-logo.png" alt="React Media" height="50px" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#home">Acasa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#services">Servicii</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#projects">Portofoliu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#our-team">Despre noi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#contact-us">Contact</a>
-        </li>
-      </ul>
+    <a class="scroll scroll-to-top" href="#home"
+      ><i class="fas fa-2x fa-chevron-up"></i
+    ></a>
+
+    <div id="home" class="jumbotron parallax"></div>
+
+    <div class="container-fluid">
+      <section id="services" class="row section section-our-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-header">
+                <h1 class="title">
+                  Servicii <span class="title-highlight">oferite</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="tile">
+                <div class="tile-image">
+                  <img
+                    src="assets/services/graphic-design.png"
+                    alt="Branding"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="tile-title">Branding</div>
+                <div class="tile-description">
+                  Oferim ideii sau afacerii tale o <span class="tile-highlight">identitate original&#259;</span> pentru a
+                  putea s&#259; te desprinzi de concuren&#355;&#259; &#238;ntr-un timp c&#226;t mai
+                  scurt. </br></br> Vom analiza &#238;mpreun&#259; diferite abord&#259;ri &#238;n jurul
+                  conceptului propus, urm&#226;nd partea de creare logo	&#351;i elemente
+                  grafice cu scopul &#238;ntregirii brandului.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="tile">
+                <div class="tile-image">
+                  <img
+                    src="assets/services/copy-right.png"
+                    alt="Marketing"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="tile-title">Marketing</div>
+                <div class="tile-description">
+                  Consider&#259;m c&#259; o idee este la fel de bun&#259; pe c&#226;t este de <span class="tile-highlight">eficient marketing</span>-ul din jurul ei. </br></br>
+                  Astfel, oferim servicii de cre&#351;tere a vizibilit&#259;&#355;ii afacerii tale at&#226;t &#238;n social media prin intermediul
+                  machetelor grafice &#351;i bannerelor, c&#226;t &#351;i fizic prin materiale pentru publicitate stradal&#259; (flyere, afi&#351;e, roll-up-uri).
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="tile">
+                <div class="tile-image">
+                  <img
+                    src="assets/services/web-responsive.png"
+                    alt="Web development"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="tile-title">Web development</div>
+                <div class="tile-description">
+                  Pentru c&#259; utilizatorul de r&#226;nd vizualizeaz&#259; con&#355;inut, &#238;n medie, 
+                  de pe 3 tipuri de device-uri zilnic, website-urile create de noi sunt <span class="tile-highlight">mobile-responsive</span>. </br></br>
+                  Odat&#259; ce ajungem la un produs final, oferim consultan&#355;&#259; &#238;n webhosting pentru ca acesta 
+                  s&#259; poat&#259; fi accesat de poten&#355;ialii clien&#355;i ai afacerii tale.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="row section">
+        <div class="container">
+          <div class="row">
+            <div class="section-header">
+              <div class="col-12">
+                <h1 class="title">
+                  <span class="title-highlight">Proiectele</span> noastre
+                </h1>
+                <h5 class="description">
+                  Experien&#355;a echipei noastre pe proiecte de toate dimensiunile 
+                  este garan&#355;ia unui produs final la nivelul a&#351;tept&#259;rilor tale.
+                  Dac&#259; vrei s&#259; vezi c&#226;te ceva din munca noastr&#259;, selecteaz&#259; categoria 
+                  de interes de mai jos, unde portofoliul nostru &#238;&#355;i st&#259; la dispozi&#355;ie.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-branding-tab"
+                    data-toggle="pill"
+                    href="#pills-branding"
+                    role="tab"
+                    aria-controls="pills-branding"
+                    aria-selected="true"
+                    >Branding</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="pills-web-tab"
+                    data-toggle="pill"
+                    href="#pills-web"
+                    role="tab"
+                    aria-controls="pills-web"
+                    aria-selected="false"
+                    >Web</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-social-media-tab"
+                    data-toggle="pill"
+                    href="#pills-social-media"
+                    role="tab"
+                    aria-controls="pills-social-media"
+                    aria-selected="false"
+                    >Social media</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-branding"
+                  role="tabpanel"
+                  aria-labelledby="pills-branding-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-web"
+                  role="tabpanel"
+                  aria-labelledby="pills-web-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-social-media"
+                  role="tabpanel"
+                  aria-labelledby="pills-social-media-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                      <img
+                        src="https://loremflickr.com/300/300"
+                        class="img-fluid img-effect"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="/projects"
+                class="react-btn react-btn-lg react-btn-link mt-5 see-more"
+                ><i class="fas fa-angle-double-left"></i> Vezi mai multe
+                <i class="fas fa-angle-double-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-team" class="row section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-header">
+                <h1 class="title">
+                  Despre <span class="title-highlight">noi</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="react-card">
+                <div class="react-card-image">
+                  <img
+                    src="assets/team/Pintilie-Razvan.jpg"
+                    alt="Pintilie Razvan"
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="react-card-title">Pintilie R&#259;zvan</h1>
+                <h5 class="react-card-subtitle">Graphic designer</h5>
+                <p class="react-card-description">
+                  The Planner
+                </p>
+                <div class="react-card-body">
+                  <a href="/" class="social-link"
+                    ><i class="fab fa-2x fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="react-card">
+                <div class="react-card-image">
+                  <img
+                    src="assets/team/Sandu-Lucian.jpg"
+                    alt="Sandu Lucian"
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="react-card-title">Sandu Lucian</h1>
+                <h5 class="react-card-subtitle">Front-end developer</h5>
+                <p class="react-card-description">
+                  The Visual Wizard
+                </p>
+                <div class="react-card-body">
+                  <a href="/" class="social-link"
+                    ><i class="fab fa-2x fa-linkedin-in"></i
+                  ></a>
+                  <a href="/" class="social-link"
+                    ><i class="fab fa-2x fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="react-card">
+                <div class="react-card-image">
+                  <img
+                    src="assets/team/Barzu-Gabriel.jpg"
+                    alt="Barzu Gabriel"
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="react-card-title">B&#226;rzu Gabriel</h1>
+                <h5 class="react-card-subtitle">Full-stack developer</h5>
+                <p class="react-card-description">
+                  The Jack of all Trades
+                </p>
+                <div class="react-card-body">
+                  <a href="/" class="social-link"
+                    ><i class="fab fa-2x fa-linkedin-in"></i
+                  ></a>
+                  <a href="/" class="social-link"
+                    ><i class="fab fa-2x fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row section section-how-we-do">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-header">
+                <h1 class="title">
+                  <span class="title-highlight">Cum</span> proced&#259;m
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="row text-left">
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="tile">
+                <div class="tile-text">01</div>
+                <div class="tile-title">Analiz&#259;</div>
+                <div class="tile-description">
+                  Discut&#259;m pentru a &#238;n&#355;elege precis nevoile tale &#351;i viziunea pe care o ai asupra proiectului.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="tile">
+                <div class="tile-text">02</div>
+                <div class="tile-title">Proiectare</div>
+                <div class="tile-description">
+                  Cre&#259;m un prototip al proiectului final &#351;i avem urm&#259;toarea discu&#355;ie pentru a ne asigura c&#259; bif&#259;m fiecare cerin&#355;&#259; pe care o ai.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="tile">
+                <div class="tile-text">03</div>
+                <div class="tile-title">Dezvoltare</div>
+                <div class="tile-description">
+                  Transpunem prototipul &#238;n website-ul dorit &#351;i asigur&#259;m func&#355;ionalitatea 100% fidel&#259; discu&#355;iilor preliminare.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="tile">
+                <div class="tile-text">04</div>
+                <div class="tile-title">Livrare</div>
+                <div class="tile-description">
+                  Trecem rezultatul prin procesele noastre de testare, ne asigur&#259;m de mul&#355;umirea ta &#351;i livr&#259;m produsul final.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-us" class="row section section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-header">
+                <h1 class="title">Contacteaz&#259;-ne</h1>
+                <h5 class="description">
+                  &#351;i hai s&#259; ducem ideile tale la nivelul urm&#259;tor!
+                  <sup><i class="fas fa-2x fa-level-up-alt" style="color: white;"></i></sup>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="row mt-5">
+              <div class="col-lg-4 col-12 text-left">
+                <a href="tel: +40754821311" class="contact-link"
+                  ><i class="fas fa-phone"></i> 0754.821.311 - R&#259;zvan</a
+                >
+                <a href="mailto: razvan@reactmedia.ro" class="contact-link"
+                  ><i class="fas fa-envelope"></i> razvan@reactmedia.ro</a
+                >
+                <hr />
+                <a href="tel: +40754821311" class="contact-link"
+                  ><i class="fas fa-phone"></i> 0754.821.311 - Lucian</a
+                >
+                <a href="mailto: lucian@reactmedia.ro" class="contact-link"
+                  ><i class="fas fa-envelope"></i> lucian@reactmedia.ro</a
+                >
+                <hr />
+                <a href="tel: +40754821311" class="contact-link"
+                  ><i class="fas fa-phone"></i> 0754.821.311 - Gabriel</a
+                >
+                <a href="mailto: gabriel@reactmedia.ro" class="contact-link"
+                  ><i class="fas fa-envelope"></i> gabriel@reactmedia.ro</a
+                >
+                <hr />
+                <a href="/" class="contact-link"
+                  ><i class="fas fa-map-pin"></i> Str Palat nr. 3C, Iași
+                  700032</a
+                >
+                <hr />
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nume" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Telefon"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    rows="7"
+                    placeholder="Mesajul t&#259;u"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div id="googleMap" class="map-container"></div>
+              </div>
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="react-btn react-btn-lg react-btn-outline-light mt-3"
+                >
+                  Trimite
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="row section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="description p-0 text-left">
+                Copyright
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                <strong class="react-text-primary">React Media</strong>
+              </h5>
+            </div>
+            <div class="col-6">
+              <h5 class="description p-0 text-right">
+                Urm&#259;re&#351;te-ne pe:
+                <a href="/" class="social-link"
+                  ><i class="fab fa-facebook"></i></a
+                ><a href="/" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </nav>
-
-  <a class="scroll scroll-to-top" href="#home"><i class="fas fa-2x fa-chevron-up"></i></a>
-
-  <div id="home" class="jumbotron parallax"></div>
-
-  <div class="container-fluid">
-    <section id="services" class="row section section-our-services">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-header">
-              <h1 class="title">
-                Servicii <span class="title-highlight">oferite</span>
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-12">
-            <div class="tile">
-              <div class="tile-image">
-                <img src="assets/services/graphic-design.png" alt="Grafic designer" class="img-fluid" />
-              </div>
-              <div class="tile-title">Grafic designer</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="tile">
-              <div class="tile-image">
-                <img src="assets/services/copy-right.png" alt="Copy write" class="img-fluid" />
-              </div>
-              <div class="tile-title">Copy write</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="tile">
-              <div class="tile-image">
-                <img src="assets/services/web-responsive.png" alt="Web responsive" class="img-fluid" />
-              </div>
-              <div class="tile-title">Web responsive</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="row section">
-      <div class="container">
-        <div class="row">
-          <div class="section-header">
-            <div class="col-12">
-              <h1 class="title">
-                <span class="title-highlight">Proiectele</span> noastre
-              </h1>
-              <h5 class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse ultrices gravida. Risus commodo viverra maecenas
-                accumsan lacus vel facilisis.
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link" id="pills-branding-tab" data-toggle="pill" href="#pills-branding" role="tab"
-                  aria-controls="pills-branding" aria-selected="true">Branding</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab"
-                  aria-controls="pills-web" aria-selected="false">Web</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-social-media-tab" data-toggle="pill" href="#pills-social-media" role="tab"
-                  aria-controls="pills-social-media" aria-selected="false">Social media</a>
-              </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-branding" role="tabpanel"
-                aria-labelledby="pills-branding-tab">
-                <div class="row">
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
-                <div class="row">
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-social-media" role="tabpanel"
-                aria-labelledby="pills-social-media-tab">
-                <div class="row">
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                  <div class="col-lg-4 col-12 mb-3">
-                    <img src="https://loremflickr.com/300/300" class="img-fluid img-effect" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="/projects" class="react-btn react-btn-lg react-btn-link mt-5 see-more"><i
-                class="fas fa-angle-double-left"></i> Vezi mai multe <i class="fas fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="our-team" class="row section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-header">
-              <h1 class="title">
-                Despre <span class="title-highlight">noi</span>
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-12">
-            <div class="react-card">
-              <div class="react-card-image">
-                <img src="assets/team/Pintilie-Razvan.jpg" alt="Pintilie Razvan" class="img-fluid">
-              </div>
-              <h1 class="react-card-title">
-                Pintilie Razvan
-              </h1>
-              <h5 class="react-card-subtitle">
-                Graphic designer
-              </h5>
-              <p class="react-card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                lacus vel facilisis.
-              </p>
-              <div class="react-card-body">
-                <a href="/" class="social-link"><i class="fab fa-2x fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="react-card">
-              <div class="react-card-image">
-                <img src="assets/team/Sandu-Lucian.jpg" alt="Sandu Lucian" class="img-fluid">
-              </div>
-              <h1 class="react-card-title">
-                Sandu Lucian
-              </h1>
-              <h5 class="react-card-subtitle">
-                Front-end developer
-              </h5>
-              <p class="react-card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                lacus vel facilisis.
-              </p>
-              <div class="react-card-body">
-                <a href="/" class="social-link"><i class="fab fa-2x fa-linkedin-in"></i></a>
-                <a href="/" class="social-link"><i class="fab fa-2x fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="react-card">
-              <div class="react-card-image">
-                <img src="assets/team/Barzu-Gabriel.jpg" alt="Barzu Gabriel" class="img-fluid">
-              </div>
-              <h1 class="react-card-title">
-                Barzu Gabriel
-              </h1>
-              <h5 class="react-card-subtitle">
-                Full-stack developer
-              </h5>
-              <p class="react-card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                lacus vel facilisis.
-              </p>
-              <div class="react-card-body">
-                <a href="/" class="social-link"><i class="fab fa-2x fa-linkedin-in"></i></a>
-                <a href="/" class="social-link"><i class="fab fa-2x fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="row section section-how-we-do">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-header">
-              <h1 class="title">
-                <span class="title-highlight">Cum</span> procedam
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="row text-left">
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="tile">
-              <div class="tile-text">01</div>
-              <div class="tile-title">Research</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="tile">
-              <div class="tile-text">02</div>
-              <div class="tile-title">Analiza</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="tile">
-              <div class="tile-text">03</div>
-              <div class="tile-title">Proiectare</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="tile">
-              <div class="tile-text">04</div>
-              <div class="tile-title">Livrare</div>
-              <div class="tile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact-us" class="row section section-colored">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-header">
-              <h1 class="title">Contacteaza-ne</h1>
-              <h5 class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h5>
-            </div>
-          </div>
-        </div>
-        <form>
-          <div class="row mt-5">
-            <div class="col-lg-4 col-12 text-left">
-              <a href="tel: +40754821311" class="contact-link"><i class="fas fa-phone"></i> 0754.821.311 - Razvan</a>
-              <a href="mailto: razvan@reactmedia.ro" class="contact-link"><i class="fas fa-envelope"></i>
-                razvan@reactmedia.ro</a>
-              <hr>
-              <a href="tel: +40754821311" class="contact-link"><i class="fas fa-phone"></i> 0754.821.311 - Lucian</a>
-              <a href="mailto: lucian@reactmedia.ro" class="contact-link"><i class="fas fa-envelope"></i>
-                lucian@reactmedia.ro</a>
-              <hr>
-              <a href="tel: +40754821311" class="contact-link"><i class="fas fa-phone"></i> 0754.821.311 - Gabriel</a>
-              <a href="mailto: gabriel@reactmedia.ro" class="contact-link"><i class="fas fa-envelope"></i>
-                gabriel@reactmedia.ro</a>
-              <hr>
-              <a href="/" class="contact-link"><i class="fas fa-map-pin"></i> Str Palat nr. 3C, Iași 700032</a>
-              <hr>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nume" />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Telefon" />
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" />
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="7" placeholder="Mesajul tau"></textarea>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div id="googleMap" class="map-container"></div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="react-btn react-btn-lg react-btn-outline-light mt-3">
-                Trimite
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="row section">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h5 class="description p-0 text-left"> Copyright
-              <script>document.write(new Date().getFullYear());</script> <strong class="react-text-primary">React
-                Media</strong></h5>
-          </div>
-          <div class="col-6">
-            <h5 class="description p-0 text-right">Urmareste-ne pe:
-              <a href="/" class="social-link"><i class="fab fa-facebook"></i></a><a href="/" class="social-link"><i
-                  class="fab fa-instagram"></i></a></h5>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</body>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs47BpxXWaDt3L6z-5FihaptHtz3v_KPA"
-  type="text/javascript"></script>
-
+  </body>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs47BpxXWaDt3L6z-5FihaptHtz3v_KPA"
+    type="text/javascript"
+  ></script>
 </html>
