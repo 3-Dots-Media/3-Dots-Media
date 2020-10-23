@@ -246,6 +246,7 @@
   footer.section {
     padding: 20px 0;
   }
+
   .scroll-to-top {
     display: none;
   }
@@ -253,14 +254,15 @@
 
 .scroll-to-top {
   position: fixed;
-  bottom: -10px;
+  bottom: 0px;
   right: 30px;
   z-index: 99;
   background-color: $black;
   color: $contrast-color;
   cursor: pointer;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
   text-transform: none;
   @include react-transition;
 
