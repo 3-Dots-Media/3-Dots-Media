@@ -20,7 +20,7 @@ label:focus,
 .form-control {
   background-color: $gray !important;
   border-radius: $border-radius-size !important;
-  @include react-transition();
+  @include dots-transition();
 }
 
 .form-control:focus {

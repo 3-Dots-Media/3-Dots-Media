@@ -115,7 +115,7 @@
 .img-effect {
   border-radius: $border-radius-size;
   filter: grayscale(1);
-  @include react-transition;
+  @include dots-transition;
 
   &:hover {
     cursor: pointer;
@@ -136,7 +136,7 @@
 .social-link {
   color: $primary-color;
   text-decoration: none;
-  @include react-transition;
+  @include dots-transition;
   margin-left: 5px;
 
   &:not(:last-of-type) {
@@ -154,7 +154,7 @@
   font-size: 18px;
   text-decoration: none;
   margin-bottom: 10px;
-  @include react-transition;
+  @include dots-transition;
 
   &:hover {
     color: $contrast-color;
@@ -163,10 +163,10 @@
 }
 
 .see-more {
-  @include react-transition;
+  @include dots-transition;
   .fa-angle-double-left,
   .fa-angle-double-right {
-    @include react-transition;
+    @include dots-transition;
     visibility: hidden;
     opacity: 0;
   }
@@ -180,8 +180,8 @@
   }
 }
 
-// React card
-.react-card {
+// Dots card
+.dots-card {
   color: $contrast-color;
   background-color: $primary-color;
   border-radius: $border-radius-size;
@@ -189,7 +189,7 @@
   padding: 20px;
   box-shadow: $box-shadow-effect;
 
-  .react-card-image {
+  .dots-card-image {
     img {
       box-shadow: $box-shadow-effect;
       width: 300px;
@@ -198,27 +198,27 @@
     }
   }
 
-  .react-card-title {
+  .dots-card-title {
     margin-top: 20px;
     font-weight: bold;
   }
 
-  .react-card-subtitle {
+  .dots-card-subtitle {
     font-style: italic;
   }
 
-  .react-card-description {
+  .dots-card-description {
     padding-top: 20px;
     line-height: normal;
   }
 
-  .react-card-body {
+  .dots-card-body {
     .social-link {
       color: $contrast-color;
       text-decoration: none;
       padding-bottom: 5px;
       margin-left: 0;
-      @include react-transition;
+      @include dots-transition;
 
       &:not(:last-of-type) {
         margin-right: 10px;
@@ -232,7 +232,7 @@
 }
 
 // Text
-.react-text-primary {
+.dots-text-primary {
   color: $primary-color;
 }
 
@@ -264,9 +264,11 @@
   border-top-left-radius: $border-radius-size;
   border-top-right-radius: $border-radius-size;
   text-transform: none;
-  @include react-transition;
+  @include dots-transition;
+}
 
-  &:hover {
+@media (hover: hover) {
+  .scroll-to-top:hover {
     box-shadow: $box-shadow-effect;
     text-transform: none;
     color: $primary-color;

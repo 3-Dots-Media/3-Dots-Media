@@ -1,4 +1,4 @@
-# ReactMedia
+# 3 Dots Media
 
 ## Development server
 

@@ -1,5 +1,5 @@
 {
-  "name": "reactmedia",
+  "name": "3dotsmedia",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -30,13 +30,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabibarzu/ReactMedia.git"
+    "url": "git+https://github.com/3-Dots-Media/3-Dots-Media.git"
   },
-  "author": "React Media Team",
+  "author": "3 Dots Media Team",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabibarzu/ReactMedia/issues"
+    "url": "https://github.com/3-Dots-Media/3-Dots-Media/issues"
   },
-  "homepage": "https://github.com/gabibarzu/ReactMedia#readme",
+  "homepage": "https://github.com/3-Dots-Media/3-Dots-Media#readme",
   "dependencies": {}
 }
