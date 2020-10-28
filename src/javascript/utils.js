@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
 export function initMap() {
-    var myCenter = new google.maps.LatLng(47.1567594, 27.5913326);
+    var myCenter = new google.maps.LatLng(47.155639, 27.585490);
     var mapProp = {
         center: myCenter,
-        zoom: 13,
+        zoom: 15,
         scrollwheel: false,
         draggable: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
