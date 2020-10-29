@@ -28,11 +28,22 @@ export function scroll() {
     });
 }
 
-
 export function mobileCloseNavbar() {
     $(document).on('click', 'a[href^="#"].scroll', function (event) {
         if ($(window).width() < 768) {
             $('.navbar-collapse').collapse('toggle');
         }
     });
+}
+
+
+export function overlay() {
+    $(document).ready(function () {
+        $('#overlay').fadeIn();
+    });
+
+    setTimeout(function () {
+        $('#overlay').fadeOut(200, "linear");
+    }, 3000);
+
 }
