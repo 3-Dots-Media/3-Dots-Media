@@ -13,8 +13,10 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
-import { initMap, scroll } from "./utils.js";
+import { initMap, scroll, mobileCloseNavbar } from "./utils.js";
+
 window.onload = function () {
     initMap();
     scroll();
+    mobileCloseNavbar();
 }
