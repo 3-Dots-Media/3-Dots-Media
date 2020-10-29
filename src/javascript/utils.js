@@ -31,7 +31,8 @@ export function scroll() {
 
 export function mobileCloseNavbar() {
     $(document).on('click', 'a[href^="#"].scroll', function (event) {
-        $('.navbar-collapse').collapse('toggle');
-        console.log('clicked');
+        if ($(window).width() < 768) {
+            $('.navbar-collapse').collapse('toggle');
+        }
     });
 }
