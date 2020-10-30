@@ -2,7 +2,6 @@ import "../sass/_main.scss";
 import "../sass/navbar.scss";
 import "../sass/buttons.scss";
 import "../sass/inputs.scss";
-import "../sass/overlay.scss";
 import "../sass/style.scss";
 
 import "jquery";
