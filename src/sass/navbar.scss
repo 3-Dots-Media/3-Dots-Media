@@ -1,8 +1,7 @@
 @import "_main.scss";
 
-.dots-media-navbar {
-  max-height: 75px;
-  background-color: rgba(0, 0, 0, 0.7);
+.navbar.navbar-dots {
+  background-color: rgba(33, 37, 41, 0.7) !important;
 
   .nav-link {
     font-size: 20px;

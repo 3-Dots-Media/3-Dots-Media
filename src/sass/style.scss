@@ -10,6 +10,15 @@
   margin: 0;
   border-radius: 0;
   animation: fade 2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .company-text {
+    font-family: "Alfa Slab One", cursive;
+    color: $contrast-color;
+  }
 }
 
 @keyframes fade {

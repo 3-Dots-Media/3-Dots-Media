@@ -23,7 +23,25 @@ export function scroll() {
     $(document).on('click', 'a[href^="#"].scroll', function (event) {
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - 75
+            scrollTop: $($.attr(this, 'href')).offset().top - 76
         }, 500);
     });
+}
+
+export function mobileCloseNavbar() {
+    $(document).on('click', 'a[href^="#"].scroll', function (event) {
+        if ($(window).width() < 768) {
+            $('.navbar-collapse').collapse('toggle');
+        }
+    });
+}
+
+export function overlay() {
+    $(document).ready(function () {
+        $('#overlay').fadeIn();
+    });
+
+    setTimeout(function () {
+        $('#overlay').fadeOut(200, "linear");
+    }, 3000);
 }
