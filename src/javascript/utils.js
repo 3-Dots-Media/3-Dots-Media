@@ -36,7 +36,6 @@ export function mobileCloseNavbar() {
     });
 }
 
-
 export function overlay() {
     $(document).ready(function () {
         $('#overlay').fadeIn();
@@ -45,5 +44,4 @@ export function overlay() {
     setTimeout(function () {
         $('#overlay').fadeOut(200, "linear");
     }, 3000);
-
 }
