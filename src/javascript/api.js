@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-let baseUrl = "http://backoffice.3dotsmedia.ro/";
+let baseUrl = "https://backoffice.3dotsmedia.ro/";
 
 export function getCategories() {
     fetch(baseUrl + 'api/category.php', {
@@ -70,7 +70,7 @@ function buildProjectSection(projects) {
         categoryDictionary[project.id_category] = categoryDictionary[project.id_category] + 1;
         let container = $('#pills-' + project.id_category + '>.row');
         container.append(
-            '<div class="col-' + col + ' p-1">' +
+            '<div class="col-md-' + col + ' col-12 p-1">' +
             '<img class="img-fluid' + effect + '" src="data:image;base64,' + project.image + '" alt="' + project.projectName + '">' +
             '</div>');
     });
