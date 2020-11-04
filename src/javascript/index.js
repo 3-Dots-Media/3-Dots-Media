@@ -14,10 +14,13 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 import { initMap, scroll, mobileCloseNavbar, overlay } from "./utils.js";
+import { getCategories, getProjects } from "./api.js";
 
 window.onload = function () {
     initMap();
     scroll();
     mobileCloseNavbar();
     overlay();
+    getCategories();
+    getProjects();
 }

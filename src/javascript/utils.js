@@ -1,6 +1,9 @@
 import $ from 'jquery';
 
 export function initMap() {
+    if (document.getElementById("googleMap") == undefined) {
+        return;
+    }
     var myCenter = new google.maps.LatLng(47.155639, 27.585490);
     var mapProp = {
         center: myCenter,
