@@ -6,7 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/hero.png");
+  background-image: url("../images/hero.jpg");
   margin: 0;
   border-radius: 0;
   animation: fade 2s ease-in-out;
@@ -16,8 +16,15 @@
   align-items: center;
 
   .company-text {
-    font-family: "Alfa Slab One", cursive;
     color: $contrast-color;
+    font-size: 3rem;
+    text-align: center;
+
+    .txt-rotate {
+      display: block;
+      color: $primary-color;
+      font-weight: bold;
+    }
   }
 }
 
