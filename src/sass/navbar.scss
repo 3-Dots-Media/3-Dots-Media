@@ -2,8 +2,14 @@
 
 .navbar.navbar-dots {
   background-color: rgba(33, 37, 41, 0.7) !important;
-  transform: translateY(-75px);
   @include dots-transition;
+
+  &.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
 
   .nav-link {
     font-size: 20px;

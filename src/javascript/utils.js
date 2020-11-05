@@ -119,17 +119,18 @@ export function animateNavigation() {
     var $win = $(window);
     var winH = $win.height();
     if (getCurentFileName() == "") {
-
         $win.on("scroll", function () {
             if ($(this).scrollTop() > winH) {
-                $nav.css("transform", "translateY(0px)");
+                $nav.addClass("sticky");
+                $('#services').css("margin-top", "75px");
             } else {
-                $nav.css("transform", "translateY(-75px)");
+                $nav.removeClass("sticky");
+                $('#services').css("margin-top", "0");
             }
         }).on("resize", function () {
             winH = $(this).height();
         });
     } else {
-        $nav.css("transform", "translateY(0px)");
+        $nav.addClass("fixed-top");
     }
 }
