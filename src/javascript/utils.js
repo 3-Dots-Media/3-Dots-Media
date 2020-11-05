@@ -26,7 +26,7 @@ export function scroll() {
     $(document).on('click', 'a[href^="#"].scroll', function (event) {
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - 76
+            scrollTop: $($.attr(this, 'href')).offset().top - 75
         }, 500);
     });
 }
@@ -107,4 +107,29 @@ export function companyText() {
         css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
         document.body.appendChild(css);
     }, 1500);
+}
+
+function getCurentFileName() {
+    var pagePathName = window.location.pathname;
+    return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
+}
+
+export function animateNavigation() {
+    var $nav = $('#navbar');
+    var $win = $(window);
+    var winH = $win.height();
+    if (getCurentFileName() == "") {
+
+        $win.on("scroll", function () {
+            if ($(this).scrollTop() > winH) {
+                $nav.css("transform", "translateY(0px)");
+            } else {
+                $nav.css("transform", "translateY(-75px)");
+            }
+        }).on("resize", function () {
+            winH = $(this).height();
+        });
+    } else {
+        $nav.css("transform", "translateY(0px)");
+    }
 }
