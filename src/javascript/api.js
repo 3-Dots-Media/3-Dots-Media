@@ -82,7 +82,6 @@ function buildProjectSection(projects) {
 }
 
 function openProject(project) {
-    console.log("Project " + project.id);
     $("#modal-fullscreen").modal("show")
     let container = $("#project-container");
 
