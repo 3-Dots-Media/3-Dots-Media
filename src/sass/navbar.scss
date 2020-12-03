@@ -1,7 +1,18 @@
 @import "_main.scss";
 
 .navbar.navbar-dots {
+  &.navbar-opaque {
+    background-color: rgba(33, 37, 41, 1) !important;
+  }
+
   background-color: rgba(33, 37, 41, 0.7) !important;
+
+  &.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
 
   .nav-link {
     font-size: 20px;

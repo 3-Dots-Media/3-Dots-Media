@@ -59,19 +59,47 @@ function buildProjectSection(projects) {
 
     var categoryDictionary = {};
     for (var i = 0; i < projects.length; i++) {
-        var id_category = projects[i].id_category;
-        categoryDictionary[id_category] = categoryDictionary[id_category] ? categoryDictionary[id_category] : 0;
+        var idCategory = projects[i].idCategory;
+        categoryDictionary[idCategory] = categoryDictionary[idCategory] ? categoryDictionary[idCategory] : 0;
     }
 
     projects.forEach(project => {
-        if (hasLimit && categoryDictionary[project.id_category] >= maxItems) {
+        if (hasLimit && categoryDictionary[project.idCategory] >= maxItems) {
             return;
         }
-        categoryDictionary[project.id_category] = categoryDictionary[project.id_category] + 1;
-        let container = $('#pills-' + project.id_category + '>.row');
+        categoryDictionary[project.idCategory] = categoryDictionary[project.idCategory] + 1;
+        let container = $('#pills-' + project.idCategory + '>.row');
         container.append(
-            '<div class="col-md-' + col + ' col-12 p-1">' +
+            '<div class="col-md-' + col + ' col-12 p-1 project" data-id=' + project.id + '>' +
             '<img class="img-fluid' + effect + '" src="data:image;base64,' + project.image + '" alt="' + project.projectName + '">' +
             '</div>');
     });
+
+    $(document).on('click', '.project', function (event) {
+        let project = projects.find(project => project.id == event.currentTarget.dataset.id);
+        openProject(project);
+    });
+}
+
+function openProject(project) {
+    $("#modal-fullscreen").modal("show")
+    let container = $("#project-container");
+
+    container.empty();
+
+    let url = project.url != "" ? '<h5 class="project-url"><a class="link" target="_blank" href="' + project.url + '">Pagina produsului</a></h5>' : '';
+
+    container.append(
+        '<div class="row">' +
+        '<div class="col-md-6 col-12">' +
+        '<img class="img-fluid" src="data:image;base64,' + project.image + '" alt="' + project.projectName + '">' +
+        '</div>' +
+        '<div class="col-md-6 col-12 project-details text-md-right text-center">' +
+        '<h1 class="project-title">' + project.projectName + '</h1>' +
+        '<h3 class="project-activity">' + project.activity + '</h3>' +
+        '<h5 class="project-description">' + project.description + '</h5>' +
+        url +
+        '</div>' +
+        '</div>'
+    );
 }

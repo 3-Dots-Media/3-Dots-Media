@@ -8,11 +8,15 @@
 
   <title>3dots Media</title>
 
-  <!-- Favicons-->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
   <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="assets/loader/loader.css" />
 
@@ -77,7 +81,28 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <nav id="navbar" class="navbar navbar-expand-md navbar-dots navbar-dark bg-dark fixed-top">
+  <div id="overlay">
+    <div class="spinner-container">
+      <div class="spinner">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="logo-text">3</div>
+    </div>
+  </div>
+
+  <a class="scroll scroll-to-top" href="#home"><i class="fas fa-2x fa-chevron-up"></i></a>
+
+  <div id="home" class="jumbotron parallax">
+    <h1 class="company-text">Ai nevoie de
+      <span class="txt-rotate" data-period="1000" data-rotate='[ "un logo?", "un website?", "social media?" ]'>ceva
+        nou?</span>
+    </h1>
+    <div class="icon-scroll"></div>
+  </div>
+
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dots navbar-dark bg-dark">
     <a class="navbar-brand" href="/"><img src="./assets/3-dots-media-logo.png" alt="3dots Media" height="50px" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -102,21 +127,6 @@
       </ul>
     </div>
   </nav>
-
-  <div id="overlay">
-    <div class="spinner-container">
-      <div class="spinner">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-      <div class="logo-text">3</div>
-    </div>
-  </div>
-
-  <a class="scroll scroll-to-top" href="#home"><i class="fas fa-2x fa-chevron-up"></i></a>
-
-  <div id="home" class="jumbotron parallax"></div>
 
   <div class="container-fluid">
     <section id="services" class="row section section-our-services">
@@ -203,9 +213,9 @@
           <div class="col-12">
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
             </ul>
-            <div class="tab-content" id="pills-tabContent" data-row="4" data-effect="true" data-max-items="3">
+            <div class="tab-content" id="pills-tabContent" data-row="4" data-effect="false" data-max-items="3">
             </div>
-            <a href="/projects.html" class="dots-btn dots-btn-lg dots-btn-link mt-5 see-more"><i
+            <a href="/projects" class="dots-btn dots-btn-lg dots-btn-link mt-5 see-more"><i
                 class="fas fa-angle-double-left"></i> Vezi mai multe <i class="fas fa-angle-double-right"></i></a>
           </div>
         </div>
@@ -384,6 +394,8 @@
           <div class="col-lg-6 col-12">
             <div class="description p-0 text-lg-right text-center">Urmăreşte-ne pe:
               <a href="https://www.facebook.com/3dotsMediaIasi/" class="social-link"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/3dotsmediaiasi/" class="social-link"><i
+                  class="fab fa-instagram"></i></a>
               <a href="https://github.com/3-Dots-Media" class="social-link"><i class="fab fa-github"></i></a>
             </div>
           </div>
