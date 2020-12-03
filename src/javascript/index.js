@@ -2,6 +2,7 @@ import "../sass/_main.scss";
 import "../sass/navbar.scss";
 import "../sass/buttons.scss";
 import "../sass/inputs.scss";
+import "../sass/project.scss";
 import "../sass/style.scss";
 
 import "jquery";
@@ -14,7 +15,7 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 import { initMap, scroll, mobileCloseNavbar, overlay, companyText, animateNavigation } from "./utils.js";
-import { getCategories, getProjects } from "./api.js";
+import { getCategories, getProjects, openProject, closeProject } from "./api.js";
 
 window.onload = function () {
     initMap();
