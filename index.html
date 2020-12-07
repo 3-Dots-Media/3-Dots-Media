@@ -76,6 +76,29 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ro_RO/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="106443361260257" theme_color="#be1e2d"
+    logged_in_greeting="Salut! Cu ce vă putem ajuta?" logged_out_greeting="Salut! Cu ce vă putem ajuta?">
+  </div>
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K65DXGM" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
