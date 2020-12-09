@@ -46,3 +46,120 @@
     background-color: $contrast-color;
   }
 }
+
+// Switch language
+.nav-item {
+  display: flex;
+  align-items: center;
+
+  .switch-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0px;
+    @media (min-width: 768px) {
+      margin: 0px 8px;
+    }
+  }
+
+  .ro,
+  .en {
+    font-size: 20px;
+    @include dots-transition;
+    cursor: pointer;
+  }
+
+  .ro {
+    padding-right: 4px;
+    color: $white;
+  }
+
+  .en {
+    padding-left: 4px;
+    color: $gray;
+  }
+
+  .switch-container.on {
+    .ro {
+      color: $gray;
+    }
+    .en {
+      color: $white;
+    }
+  }
+
+  input {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: $gray;
+    border-radius: 60px;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    @include dots-transition;
+  }
+
+  input::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-image: url("../images/language/ro.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    @include dots-transition;
+    animation: lang-ro 0.3s ease;
+  }
+
+  .switch-container.on input::before {
+    animation: lang-en 0.3s ease;
+  }
+
+  input:checked::before {
+    left: 30px;
+    background-image: url("../images/language/uk.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes lang-en {
+    0% {
+      left: 0px;
+    }
+    20% {
+      left: -5px;
+    }
+    80% {
+      left: 35px;
+    }
+    100% {
+      left: 30px;
+    }
+  }
+
+  @keyframes lang-ro {
+    0% {
+      left: 30px;
+    }
+    20% {
+      left: 35px;
+    }
+    80% {
+      left: -5px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+}
