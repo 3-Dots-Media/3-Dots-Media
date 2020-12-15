@@ -81,9 +81,18 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav id="navbar" class="navbar navbar-expand-md navbar-dots navbar-dark bg-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-dots navbar-dark bg-dark">
         <a class="navbar-brand" href="/"><img src="./assets/3-dots-media-logo.png" alt="3dots Media"
                 height="50px" /></a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <div class="switch-container">
+                    <div class="ro">Ro</div>
+                    <input type="checkbox" class="switchBtn" />
+                    <div class="en">En</div>
+                </div>
+            </li>
+        </ul>
     </nav>
 
     <div id="overlay">
@@ -101,7 +110,6 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <h5 class="modal-title">Modal title</h5> -->
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class="fas fa-times close-project"></i></span>
                     </button>
@@ -116,7 +124,8 @@
     <div class="container-fluid">
         <section class="row section section-project">
             <div class="title">
-                <span class="title-highlight">Proiectele </span>noastre
+                <span class="title-highlight" data-translate="[lblOurProjectsHighlight]"></span> <span
+                    data-translate="[lblOurProjects]"></span>
             </div>
         </section>
 
@@ -133,15 +142,13 @@
             </div>
         </section>
 
-        <section class="row section section-colored">
+        <section id="contact-us" class="row section section-colored">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="section-header">
-                            <div class="title">Contactează-ne</div>
-                            <div class="description">
-                                şi hai să ducem ideile tale la nivelul următor!
-                            </div>
+                            <div class="title" data-translate="[lblContactUs]"></div>
+                            <div class="description" data-translate="[lblContactUsDescription]"></div>
                         </div>
                     </div>
                 </div>
@@ -163,8 +170,7 @@
                             gabriel@3dotsmedia.ro</a>
                         <hr />
                         <a href="https://goo.gl/maps/5mGrWU4nKsNGJQ1UA" class="contact-link"><i
-                                class="fas fa-map-pin"></i>
-                            Str
+                                class="fas fa-map-pin"></i> Str
                             Palat nr. 3C, Iași
                             700032</a>
                         <hr />
@@ -183,10 +189,12 @@
                         <div class="description p-0 text-lg-left text-center"> Copyright
                             <script>document.write(new Date().getFullYear());</script> <strong
                                 class="dots-text-primary">3dots
-                                Media</strong></div>
+                                Media</strong>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-12">
-                        <div class="description p-0 text-lg-right text-center">Urmăreşte-ne pe:
+                        <div class="description p-0 text-lg-right text-center"> <span
+                                data-translate="[lblFollowUs]"></span>
                             <a href="https://www.facebook.com/3dotsMediaIasi/" class="social-link"><i
                                     class="fab fa-facebook"></i></a>
                             <a href="https://www.instagram.com/3dotsmediaiasi/" class="social-link"><i

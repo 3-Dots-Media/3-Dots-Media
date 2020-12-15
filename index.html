@@ -92,7 +92,8 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/ro_RO/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat" attribution=setup_tool page_id="106443361260257" theme_color="#be1e2d"
@@ -100,8 +101,10 @@
   </div>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K65DXGM" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K65DXGM" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <div id="overlay">
@@ -118,8 +121,9 @@
   <a class="scroll scroll-to-top" href="#home"><i class="fas fa-2x fa-chevron-up"></i></a>
 
   <div id="home" class="jumbotron parallax">
-    <h1 class="company-text">Ai nevoie de
-      <span class="txt-rotate" data-period="1000" data-rotate='[ "un logo?", "un website?", "social media?" ]'>ceva
+    <h1 class="company-text"><span data-translate="[lblYouNeed]"></span>
+      <span class=" txt-rotate" data-period="1000" data-rotateRo='[ "un logo?", "un website?", "social media?" ]'
+        data-rotateEn='[ "a logo?", "a website?", "social media?" ]'>ceva
         nou?</span>
     </h1>
     <div class="icon-scroll"></div>
@@ -133,19 +137,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link scroll" href="#home">Acasă</a>
+          <a class="nav-link scroll" href="#home" data-translate="[menuHome]"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#services">Servicii</a>
+          <a class="nav-link scroll" href="#services" data-translate="[menuServices]"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#projects">Portofoliu</a>
+          <a class="nav-link scroll" href="#projects" data-translate="[menuPortofolio]"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#our-team">Despre noi</a>
+          <a class="nav-link scroll" href="#our-team" data-translate="[menuAboutUs]"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#contact-us">Contact</a>
+          <a class="nav-link scroll" href="#contact-us" data-translate="[menuContact]"></a>
         </li>
         <li class="nav-item">
           <div class="switch-container">
@@ -165,7 +169,8 @@
           <div class="col-12">
             <div class="section-header">
               <div class="title">
-                Servicii <span class="title-highlight">oferite</span>
+                <span data-translate="[lblServices]"></span> <span class="title-highlight"
+                  data-translate="[lblServicesHighlight]"></span>
               </div>
             </div>
           </div>
@@ -176,13 +181,11 @@
               <div class="tile-image">
                 <img src="assets/services/brand.svg" alt="Branding" class="img-fluid" />
               </div>
-              <h2 class="tile-title">Branding</h2>
+              <h2 class="tile-title" data-translate="[lblBranding]"></h2>
               <div class="tile-description">
-                Oferim ideii sau afacerii tale o <span class="tile-highlight">identitate originală</span> pentru a
-                putea să te desprinzi de concurenţă într-un timp cât mai
-                scurt. </br></br> Vom analiza împreună diferite abordări în jurul
-                conceptului propus, urmând partea de creare logo şi elemente
-                grafice cu scopul întregirii brandului.
+                <span data-translate="[lblBrandingDescriptionFirst]"></span> <span class="tile-highlight"
+                  data-translate="[lblBrandingDescriptionHighlight]"></span> <span
+                  data-translate="[lblBrandingDescriptionLast]"></span>
               </div>
             </div>
           </div>
@@ -191,14 +194,11 @@
               <div class="tile-image">
                 <img src="assets/services/marketing.svg" alt="Marketing" class="img-fluid" />
               </div>
-              <h2 class="tile-title">Marketing</h2>
+              <h2 class="tile-title" data-translate="[lblMarketing]"></h2>
               <div class="tile-description">
-                Considerăm că o idee este la fel de bună pe cât este de <span class="tile-highlight">eficient
-                  marketing</span>-ul din jurul ei. </br></br>
-                Astfel, oferim servicii de creştere a vizibilităţii afacerii tale atât în
-                social media prin intermediul
-                machetelor grafice şi bannerelor, cât şi fizic prin materiale pentru publicitate
-                stradală (flyere, afişe, roll-up-uri).
+                <span data-translate="[lblMarketingDescriptionFirst]"></span> <span class="tile-highlight"
+                  data-translate="[lblMarketingDescriptionHighlight]"></span> <span
+                  data-translate="[lblMarketingDescriptionLast]"></span>
               </div>
             </div>
           </div>
@@ -207,14 +207,11 @@
               <div class="tile-image">
                 <img src="assets/services/web.svg" alt="Web development" class="img-fluid" />
               </div>
-              <h2 class="tile-title">Web development</h2>
+              <h2 class="tile-title" data-translate="[lblWebDevelopment]"></h2>
               <div class="tile-description">
-                Pentru că utilizatorul de rând vizualizează conţinut, în medie,
-                de pe 3 tipuri de device-uri zilnic, website-urile create de noi sunt <span
-                  class="tile-highlight">mobile-responsive</span>. </br></br>
-                Odată ce ajungem la un produs final, oferim consultanţă în webhosting pentru ca
-                acesta
-                să poată fi accesat de potenţialii clienţi ai afacerii tale.
+                <span data-translate="[lblWebDevelopmentDescriptionFirst]"></span> <span class="tile-highlight"
+                  data-translate="[lblWebDevelopmentDescriptionHighlight]"></span> <span
+                  data-translate="[lblWebDevelopmentDescriptionLast]"></span>
               </div>
             </div>
           </div>
@@ -228,14 +225,10 @@
           <div class="section-header">
             <div class="col-12">
               <div class="title">
-                <span class="title-highlight">Proiectele</span> noastre
+                <span class="title-highlight" data-translate="[lblOurProjectsHighlight]"></span> <span
+                  data-translate="[lblOurProjects]"></span>
               </div>
-              <div class="description">
-                Experienţa echipei noastre pe proiecte de toate dimensiunile
-                este garanţia unui produs final la nivelul aşteptărilor tale.
-                Dacă vrei să vezi câte ceva din munca noastră, selectează categoria
-                de interes de mai jos, unde portofoliul nostru îţi stă la dispoziţie.
-              </div>
+              <div class="description" data-translate="[lblOurProjectsDescription]"></div>
             </div>
           </div>
         </div>
@@ -246,7 +239,8 @@
             <div class="tab-content" id="pills-tabContent" data-row="4" data-effect="false" data-max-items="3">
             </div>
             <a href="/projects" class="dots-btn dots-btn-lg dots-btn-link mt-5 see-more"><i
-                class="fas fa-angle-double-left"></i> Vezi mai multe <i class="fas fa-angle-double-right"></i></a>
+                class="fas fa-angle-double-left"></i> <span data-translate="[btnSeeMore]"></span> <i
+                class="fas fa-angle-double-right"></i></a>
           </div>
         </div>
       </div>
@@ -258,7 +252,8 @@
           <div class="col-12">
             <div class="section-header">
               <div class="title">
-                Despre <span class="title-highlight">noi</span>
+                <span data-translate="[lblAboutUs]"></span> <span class="title-highlight"
+                  data-translate="[lblAboutUsHighlight]"></span>
               </div>
             </div>
           </div>
@@ -324,7 +319,8 @@
           <div class="col-12">
             <div class="section-header">
               <div class="title">
-                <span class="title-highlight">Cum</span> procedăm
+                <span class="title-highlight" data-translate="[lblHowWeDoItHighlight]"></span> <span
+                  data-translate="[lblHowWeDoIt]"></span>
               </div>
             </div>
           </div>
@@ -333,41 +329,29 @@
           <div class="col-lg-3 col-sm-6 col-12">
             <div class="tile">
               <div class="tile-text">01</div>
-              <h4 class="tile-title">Analiză</h4>
-              <div class="tile-description">
-                Discutăm pentru a înţelege precis nevoile tale şi viziunea pe care o ai asupra
-                proiectului.
-              </div>
+              <h4 class="tile-title" data-translate="[lblAnalyse]"></h4>
+              <div class="tile-description" data-translate="[lblAnalyseDescription]"> </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 col-12">
             <div class="tile">
               <div class="tile-text">02</div>
-              <h4 class="tile-title">Proiectare</h4>
-              <div class="tile-description">
-                Creăm un prototip al proiectului final şi avem următoarea discuţie pentru a ne
-                asigura că bifăm fiecare cerinţă pe care o ai.
-              </div>
+              <h4 class="tile-title" data-translate="[lblProject]"></h4>
+              <div class="tile-description" data-translate="[lblProjectDescription]"></div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 col-12">
             <div class="tile">
               <div class="tile-text">03</div>
-              <h4 class="tile-title">Dezvoltare</h4>
-              <div class="tile-description">
-                Transpunem prototipul în website-ul dorit şi asigurăm funcţionalitatea 100%
-                fidelă discuţiilor preliminare.
-              </div>
+              <h4 class="tile-title" data-translate="[lblDevelop]"></h4>
+              <div class="tile-description" data-translate="[lblDevelopDescription]"></div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 col-12">
+          <div class=" col-lg-3 col-sm-6 col-12">
             <div class="tile">
               <div class="tile-text">04</div>
-              <h4 class="tile-title">Livrare</h4>
-              <div class="tile-description">
-                Trecem rezultatul prin procesele noastre de testare, ne asigurăm de mulţumirea ta şi
-                livrăm produsul final.
-              </div>
+              <h4 class="tile-title" data-translate="[lblDelivery]"></h4>
+              <div class="tile-description" data-translate="[lblDeliveryDescription]"></div>
             </div>
           </div>
         </div>
@@ -379,10 +363,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-header">
-              <div class="title">Contactează-ne</div>
-              <div class="description">
-                şi hai să ducem ideile tale la nivelul următor!
-              </div>
+              <div class="title" data-translate="[lblContactUs]"></div>
+              <div class="description" data-translate="[lblContactUsDescription]"></div>
             </div>
           </div>
         </div>
@@ -419,10 +401,11 @@
           <div class="col-lg-6 col-12">
             <div class="description p-0 text-lg-left text-center"> Copyright
               <script>document.write(new Date().getFullYear());</script> <strong class="dots-text-primary">3dots
-                Media</strong></div>
+                Media</strong>
+            </div>
           </div>
           <div class="col-lg-6 col-12">
-            <div class="description p-0 text-lg-right text-center">Urmăreşte-ne pe:
+            <div class="description p-0 text-lg-right text-center"> <span data-translate="[lblFollowUs]"></span>
               <a href="https://www.facebook.com/3dotsMediaIasi/" class="social-link"><i class="fab fa-facebook"></i></a>
               <a href="https://www.instagram.com/3dotsmediaiasi/" class="social-link"><i
                   class="fab fa-instagram"></i></a>

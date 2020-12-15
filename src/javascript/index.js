@@ -16,7 +16,7 @@ import '@fortawesome/fontawesome-free/js/brands'
 
 import { initMap, scroll, mobileCloseNavbar, overlay, companyText, animateNavigation } from "./utils.js";
 import { getCategories, getProjects } from "./api.js";
-import { switchListener, setLanuageIcon, changeLanguage } from "./translation.js";
+import { switchListener, setLanuageIcon, changeLanguage, changeTranslations } from "./translation.js";
 
 window.onload = function () {
     initMap();
@@ -30,4 +30,5 @@ window.onload = function () {
     switchListener();
     setLanuageIcon();
     changeLanguage();
+    changeTranslations();
 }

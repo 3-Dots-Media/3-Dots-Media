@@ -1,6 +1,11 @@
 import $ from 'jquery';
+import tranlations from "../javascript/resources";
 
 let currentLanguage = 1;
+const languages = {
+    1: "ro",
+    2: "en",
+};
 
 export function switchListener() {
     const switchBtn = document.querySelector(".switchBtn");
@@ -8,12 +13,18 @@ export function switchListener() {
     const ro = document.querySelector(".ro");
     const en = document.querySelector(".en");
 
-    switchBtn.addEventListener("click", () => container.classList.toggle("on"));
+    switchBtn.addEventListener("click", () => {
+        container.classList.toggle("on");
+        currentLanguage = currentLanguage == 1 ? 2 : 1;
+        changeTranslations();
+    });
 
     ro.addEventListener("click", () => {
         if (switchBtn.checked) {
             switchBtn.checked = false;
             container.classList.toggle("on");
+            currentLanguage = currentLanguage == 1 ? 2 : 1;
+            changeTranslations();
         } else {
             return;
         }
@@ -25,6 +36,8 @@ export function switchListener() {
         } else {
             switchBtn.checked = true;
             container.classList.toggle("on");
+            currentLanguage = currentLanguage == 1 ? 2 : 1;
+            changeTranslations();
         }
     });
 }
@@ -59,4 +72,15 @@ function getTranslation(value) {
         console.warn(value + " was not found in translations!");
     }
     return translation;
+}
+
+export function changeTranslations() {
+    $("[data-translate]").each(function () {
+        var translation = this.dataset.translate;
+        if (this.nodeName.toLowerCase() == "input" || this.nodeName.toLowerCase() == "textarea") {
+            $(this).attr("placeholder", getTranslation(translation));
+        } else {
+            $(this).text(getTranslation(translation));
+        }
+    });
 }

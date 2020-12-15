@@ -24,7 +24,7 @@ function buildCategorySection(categories) {
         let isActive = contor === half;
         contor++;
         tab.append(
-            '<li class="nav-item">' +
+            '<li class="nav-item d-inline-block">' +
             '<a class="nav-link' + (isActive ? ' active' : '') + '" id="pills-' + category.id + '-tab" data-toggle="pill" href="#pills-' + category.id + '" role="tab" aria-controls="pills-' + category.id + '" aria-selected="false">' + category.name + '</a>' +
             '</li>'
         );
@@ -53,7 +53,7 @@ export function getProjects() {
 function buildProjectSection(projects) {
     let parent = $("#pills-tabContent");
     let col = parent.data("row");
-    let effect = parent.data("effect") ? ' img-effect' : '';
+    let effect = parent.data("effect") ? ' img-effect' : ' img-border-radius';
     let hasLimit = parent.data("max-items") ? true : false;
     let maxItems = parent.data("max-items");
 

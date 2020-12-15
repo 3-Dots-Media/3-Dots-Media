@@ -50,8 +50,9 @@ export function overlay() {
 }
 
 
-var TxtRotate = function (el, toRotate, period) {
-    this.toRotate = toRotate;
+var TxtRotate = function (el, toRotateRo, toRotateEn, period) {
+    this.toRotateRo = toRotateRo;
+    this.toRotateEn = toRotateEn;
     this.el = el;
     this.loopNum = 0;
     this.period = parseInt(period, 10) || 2000;
@@ -61,8 +62,10 @@ var TxtRotate = function (el, toRotate, period) {
 };
 
 TxtRotate.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    var currentLanguage = !document.querySelector(".switch-container").classList.value.includes(" on") ? 1 : 2;
+
+    var i = this.loopNum % (currentLanguage == 1 ? this.toRotateRo.length : this.toRotateEn.length);
+    var fullTxt = currentLanguage == 1 ? this.toRotateRo[i] : this.toRotateEn[i];
 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -95,10 +98,11 @@ export function companyText() {
     setTimeout(function () {
         var elements = document.getElementsByClassName('txt-rotate');
         for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-rotate');
+            var toRotateRo = elements[i].getAttribute('data-rotateRo');
+            var toRotateEn = elements[i].getAttribute('data-rotateEn');
             var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            if (toRotateRo && toRotateEn) {
+                new TxtRotate(elements[i], JSON.parse(toRotateRo), JSON.parse(toRotateEn), period);
             }
         }
         // INJECT CSS
