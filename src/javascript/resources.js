@@ -160,8 +160,8 @@ const tranlations = {
     2: "Website page",
   },
   "[lblNoTranslation]": {
-    1: "Ne pare rău dar pentru acest proiect nu a fost încă adăugată o categorie.",
-    2: "We are sorry, but no category has been added to this project yet.",
+    1: "Ne pare rău dar pentru acest proiect nu a fost încă adăugată o descriere.",
+    2: "We are sorry, but no description has been added to this project yet.",
   },
 };
 
