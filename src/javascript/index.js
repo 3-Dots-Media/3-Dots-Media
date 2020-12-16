@@ -9,26 +9,39 @@ import "jquery";
 import "popper.js";
 import "bootstrap";
 
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
+import "@fortawesome/fontawesome-free/js/regular";
+import "@fortawesome/fontawesome-free/js/brands";
 
-import { initMap, scroll, mobileCloseNavbar, overlay, companyText, animateNavigation } from "./utils.js";
+import {
+  initMap,
+  scroll,
+  mobileCloseNavbar,
+  overlay,
+  companyText,
+  animateNavigation,
+} from "./utils.js";
 import { getCategories, getProjects } from "./api.js";
-import { switchListener, setLanuageIcon, changeLanguage, changeTranslations } from "./translation.js";
+import {
+  switchListener,
+  setLanuageIcon,
+  changeLanguage,
+  changeTranslations,
+  getTranslation,
+} from "./translation.js";
 
 window.onload = function () {
-    initMap();
-    scroll();
-    mobileCloseNavbar();
-    overlay();
-    companyText();
-    animateNavigation();
-    getCategories();
-    getProjects();
-    switchListener();
-    setLanuageIcon();
-    changeLanguage();
-    changeTranslations();
-}
+  initMap();
+  scroll();
+  mobileCloseNavbar();
+  overlay();
+  companyText();
+  animateNavigation();
+  getCategories();
+  getProjects();
+  switchListener();
+  setLanuageIcon();
+  changeLanguage();
+  changeTranslations();
+};
