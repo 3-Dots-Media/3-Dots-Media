@@ -1,5 +1,5 @@
 import $ from "jquery";
-import tranlations from "../javascript/resources";
+import translations from "../javascript/resources";
 
 let currentLanguage = 1;
 
@@ -43,7 +43,7 @@ export function switchListener() {
   });
 }
 
-export function setLanuageIcon() {
+export function setLanguageIcon() {
   $(".nav-item-with-flag").each(function () {
     if (this.dataset.value == currentLanguage) {
       $(this).addClass("selected");
@@ -58,7 +58,7 @@ export function changeLanguage() {
     let element = event.target;
     if (element.dataset.value != currentLanguage) {
       currentLanguage = currentLanguage == 1 ? 2 : 1;
-      setLanuageIcon();
+      setLanguageIcon();
     }
   });
 }
@@ -66,7 +66,7 @@ export function changeLanguage() {
 export function getTranslation(value) {
   let translation;
   try {
-    translation = tranlations[value][currentLanguage];
+    translation = translations[value][currentLanguage];
   } catch (err) {
     translation = value;
     console.warn(value + " was not found in translations!");

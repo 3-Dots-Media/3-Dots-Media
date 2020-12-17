@@ -25,7 +25,7 @@ import {
 import { getCategories, getProjects } from "./api.js";
 import {
   switchListener,
-  setLanuageIcon,
+  setLanguageIcon,
   changeLanguage,
   changeTranslations,
   getTranslation,
@@ -41,7 +41,7 @@ window.onload = function () {
   getCategories();
   getProjects();
   switchListener();
-  setLanuageIcon();
+  setLanguageIcon();
   changeLanguage();
   changeTranslations();
 };
