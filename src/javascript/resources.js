@@ -19,13 +19,13 @@ const translations = {
     1: "Contact",
     2: "Contact",
   },
-  "[lblServices]": {
-    1: "Servicii",
-    2: "Services",
-  },
   "[lblYouNeed]": {
     1: "Ai nevoie de",
     2: "Do you need",
+  },
+  "[lblServices]": {
+    1: "Servicii",
+    2: "Services",
   },
   "[lblServicesHighlight]": {
     1: "oferite",
@@ -108,7 +108,7 @@ const translations = {
     2: "How",
   },
   "[lblHowWeDoIt]": {
-    1: "procedam",
+    1: "procedăm",
     2: "we do it",
   },
   "[lblAnalyse]": {
