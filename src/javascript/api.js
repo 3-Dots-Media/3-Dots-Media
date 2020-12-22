@@ -92,10 +92,10 @@ function buildProjectSection(projects) {
     container.append(
       '<div class="col-md-' +
         col +
-        ' col-12 p-1 project" data-id=' +
+        ' col-12 p-2 project" data-id=' +
         project.id +
         ">" +
-        '<img class="img-fluid' +
+        '<img class="img-fluid img-shadow ' +
         effect +
         '" src="data:image;base64,' +
         project.image +

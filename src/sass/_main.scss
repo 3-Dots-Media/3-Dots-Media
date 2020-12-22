@@ -3,6 +3,10 @@
 @import "_colors.scss";
 @import "_mixins.scss";
 
+$theme-colors: (
+  "primary": $primary-color,
+);
+
 @import "~bootstrap/scss/bootstrap";
 
 $material-icons-font-path: "~material-icons/iconfont/";

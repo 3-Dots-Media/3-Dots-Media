@@ -18,18 +18,29 @@ label:focus,
 }
 
 .form-control {
-  background-color: $gray !important;
+  background-color: $pale-gray !important;
   border-radius: $border-radius-size !important;
+  box-shadow: $box-shadow-effect !important;
+  border-color: $pale-gray !important;
   @include dots-transition();
-}
 
-.form-control:focus {
-  background-color: $contrast-color !important;
-  border-color: $primary-color !important;
-}
+  &:focus {
+    background-color: $contrast-color !important;
+    border-color: $primary-color !important;
+    box-shadow: $box-shadow-effect !important;
+  }
 
+  &:hover:not(:focus) {
+    border-color: $gray !important;
+    box-shadow: $box-shadow-effect !important;
+  }
+}
 .section-colored {
   .form-control:focus {
     border-color: $black !important;
   }
+}
+
+textarea {
+  resize: none !important;
 }

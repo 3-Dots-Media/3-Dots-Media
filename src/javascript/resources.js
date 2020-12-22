@@ -144,12 +144,8 @@ const translations = {
     2: "We take the result through our testing processes, we make sure you are happy with it and then we deliver the final product.",
   },
   "[lblContactUs]": {
-    1: "Contactează-ne",
-    2: "Contact us",
-  },
-  "[lblContactUsDescription]": {
-    1: "şi hai să ducem ideile tale la nivelul următor!",
-    2: "and let's take your ideas to the next level!",
+    1: "Unde ne poţi găsi",
+    2: "Where you can find us",
   },
   "[lblFollowUs]": {
     1: "Urmăreşte-ne pe:",
@@ -162,6 +158,34 @@ const translations = {
   "[lblNoTranslation]": {
     1: "Ne pare rău, dar pentru acest proiect nu a fost încă adăugată o descriere.",
     2: "We are sorry, but no description has been added to this project yet.",
+  },
+  "[lblContact]": {
+    1: "Hai să stabilim viitorul",
+    2: "Let's determine the future",
+  },
+  "[lblContactHighlight]": {
+    1: "firmei tale",
+    2: "of your company",
+  },
+  "[lblName]": {
+    1: "Nume",
+    2: "Name",
+  },
+  "[lblPhone]": {
+    1: "Telefon",
+    2: "Phone",
+  },
+  "[lblEmail]": {
+    1: "Email",
+    2: "Email",
+  },
+  "[lblMessage]": {
+    1: "Mesajul tău",
+    2: "Your message",
+  },
+  "[btnSend]": {
+    1: "Trimite",
+    2: "Send",
   },
 };
 
