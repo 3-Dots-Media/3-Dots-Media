@@ -187,6 +187,26 @@ const translations = {
     1: "Trimite",
     2: "Send",
   },
+  "[btnSending]": {
+    1: "Se trimite...",
+    2: "Sending...",
+  },
+  "[lblSuccess]": {
+    1: "Super!",
+    2: "Great!",
+  },
+  "[lblDanger]": {
+    1: "Oups!",
+    2: "Oups!",
+  },
+  "[lblMailSend]": {
+    1: "Mesajul tău a fost trimis!",
+    2: "Your message was sent!",
+  },
+  "[lblMailFail]": {
+    1: "Mesajul tău nu a fost trimis. Te rugăm să dai refresh paginii!",
+    2: "Your message was not sent. Please refresh the page!",
+  },
 };
 
 export default translations;

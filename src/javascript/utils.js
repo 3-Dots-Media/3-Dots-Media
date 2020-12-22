@@ -1,4 +1,5 @@
 import $ from "jquery";
+import { getTranslation } from "./translation";
 
 export function initMap() {
   if (document.getElementById("googleMap") == undefined) {
@@ -151,4 +152,45 @@ export function animateNavigation() {
   } else {
     $nav.addClass("fixed-top");
   }
+}
+
+export function sendEmail() {
+  const form = document.getElementById("contact-form");
+  const button = document.getElementById("send-mail");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    button.innerHTML = getTranslation("[btnSending]");
+    button.blur();
+
+    const serviceID = "default_service";
+    const templateID = "3dotsMediaFormContact";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        createNotification("success", "[lblSuccess]", "[lblMailSend]");
+        form.reset();
+      },
+      (err) => {
+        createNotification("danger", "[lblDanger]", "[lblMailFail]");
+        form.reset();
+      }
+    );
+  });
+}
+
+function createNotification(type, message, details) {
+  let container = $("#form-result");
+  container.empty();
+  container.append(
+    '<div class="alert alert-' +
+      type +
+      '" role="alert"><strong>' +
+      getTranslation(message) +
+      "</strong>" +
+      " " +
+      getTranslation(details) +
+      "</div>"
+  );
 }

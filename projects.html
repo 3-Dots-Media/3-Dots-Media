@@ -295,42 +295,57 @@
               />
             </div>
             <div class="col-lg-7 py-5">
-              <form class="text-left">
+              <form id="contact-form" class="text-left">
                 <div class="form-group">
                   <input
                     type="text"
                     class="form-control"
+                    name="name"
+                    id="name"
                     data-translate="[lblName]"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <input
                     type="text"
                     class="form-control"
+                    name="phone"
+                    id="phone"
                     data-translate="[lblPhone]"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <input
                     type="email"
                     class="form-control"
+                    name="email"
+                    id="email"
                     data-translate="[lblEmail]"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <textarea
                     class="form-control"
+                    name="message"
+                    id="message"
                     rows="5"
                     data-translate="[lblMessage]"
+                    required
                   ></textarea>
                 </div>
+                <div id="form-result">
                 <button
+                  id="send-mail"
                   type="submit"
                   class="btn btn-primary"
                   data-translate="[btnSend]"
                 >
                   Trimite
                 </button>
+                </form> 
               </form>
             </div>
           </div>
@@ -351,7 +366,7 @@
             </div>
             <div class="col-lg-6 col-12">
               <div class="description p-0 text-lg-right text-center">
-                <span data-translate="[lblFollowUs]"></span>
+                <span data-translate="[lblFollowUs]">Urmăreşte-ne pe:</span>
                 <a
                   href="https://www.facebook.com/3dotsMediaIasi/"
                   class="social-link"
@@ -379,4 +394,13 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs47BpxXWaDt3L6z-5FihaptHtz3v_KPA"
     type="text/javascript"
   ></script>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+  ></script>
+
+  <script type="text/javascript">
+    emailjs.init("user_isFnRe5NEV6Vi6N9bYcp9");
+  </script>
 </html>
