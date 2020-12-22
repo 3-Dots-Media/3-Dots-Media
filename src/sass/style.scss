@@ -153,6 +153,10 @@
   }
 }
 
+.img-border-radius {
+  border-radius: $border-radius-size;
+}
+
 ::-moz-selection {
   background: $primary-color;
   color: $contrast-color;

@@ -9,21 +9,39 @@ import "jquery";
 import "popper.js";
 import "bootstrap";
 
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
+import "@fortawesome/fontawesome-free/js/regular";
+import "@fortawesome/fontawesome-free/js/brands";
 
-import { initMap, scroll, mobileCloseNavbar, overlay, companyText, animateNavigation } from "./utils.js";
-import { getCategories, getProjects, openProject, closeProject } from "./api.js";
+import {
+  initMap,
+  scroll,
+  mobileCloseNavbar,
+  overlay,
+  companyText,
+  animateNavigation,
+} from "./utils.js";
+import { getCategories, getProjects } from "./api.js";
+import {
+  switchListener,
+  setLanguageIcon,
+  changeLanguage,
+  changeTranslations,
+  getTranslation,
+} from "./translation.js";
 
 window.onload = function () {
-    initMap();
-    scroll();
-    mobileCloseNavbar();
-    overlay();
-    companyText();
-    animateNavigation();
-    getCategories();
-    getProjects();
-}
+  initMap();
+  scroll();
+  mobileCloseNavbar();
+  overlay();
+  companyText();
+  animateNavigation();
+  getCategories();
+  getProjects();
+  switchListener();
+  setLanguageIcon();
+  changeLanguage();
+  changeTranslations();
+};
