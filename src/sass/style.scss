@@ -98,6 +98,13 @@
   background-image: url("../images/how-we-do.png");
 }
 
+.section-contact {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/contact.png");
+}
+
 .section-project {
   background-position: center;
   background-repeat: no-repeat;
@@ -155,6 +162,10 @@
 
 .img-border-radius {
   border-radius: $border-radius-size;
+}
+
+.img-shadow {
+  box-shadow: $box-shadow-effect;
 }
 
 ::-moz-selection {
@@ -345,4 +356,14 @@
     opacity: 0;
     transform: translateY(26px);
   }
+}
+
+.section-contact {
+  .img-contact {
+    width: 100%;
+  }
+}
+
+.alert {
+  box-shadow: $box-shadow-effect;
 }

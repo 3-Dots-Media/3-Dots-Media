@@ -75,15 +75,23 @@ export function getTranslation(value) {
 }
 
 export function changeTranslations() {
-  $("[data-translate]").each(function () {
-    var translation = this.dataset.translate;
-    if (
-      this.nodeName.toLowerCase() == "input" ||
-      this.nodeName.toLowerCase() == "textarea"
-    ) {
-      $(this).attr("placeholder", getTranslation(translation));
-    } else {
-      $(this).text(getTranslation(translation));
-    }
+  $(document).ready(function () {
+    $("#overlay").fadeIn();
   });
+  setTimeout(function () {
+    $("[data-translate]").each(function () {
+      var translation = this.dataset.translate;
+      if (
+        this.nodeName.toLowerCase() == "input" ||
+        this.nodeName.toLowerCase() == "textarea"
+      ) {
+        $(this).attr("placeholder", getTranslation(translation));
+      } else {
+        $(this).text(getTranslation(translation));
+      }
+    });
+  }, 1000);
+  setTimeout(function () {
+    $("#overlay").fadeOut(200, "linear");
+  }, 1500);
 }

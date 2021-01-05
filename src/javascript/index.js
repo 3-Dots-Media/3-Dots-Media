@@ -21,6 +21,7 @@ import {
   overlay,
   companyText,
   animateNavigation,
+  sendEmail,
 } from "./utils.js";
 import { getCategories, getProjects } from "./api.js";
 import {
@@ -28,7 +29,6 @@ import {
   setLanguageIcon,
   changeLanguage,
   changeTranslations,
-  getTranslation,
 } from "./translation.js";
 
 window.onload = function () {
@@ -44,4 +44,5 @@ window.onload = function () {
   setLanguageIcon();
   changeLanguage();
   changeTranslations();
+  sendEmail();
 };
