@@ -4,6 +4,7 @@ import "../sass/buttons.scss";
 import "../sass/inputs.scss";
 import "../sass/project.scss";
 import "../sass/style.scss";
+import "../sass/accordion.scss";
 
 import "jquery";
 import "popper.js";

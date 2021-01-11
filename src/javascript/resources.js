@@ -103,11 +103,11 @@ const translations = {
     1: "noi",
     2: "us",
   },
-  "[lblHowWeDoItHighlight]": {
+  "[lblHowWeDoIt]": {
     1: "Cum",
     2: "How",
   },
-  "[lblHowWeDoIt]": {
+  "[lblHowWeDoItHighlight]": {
     1: "procedăm",
     2: "we do it",
   },
@@ -206,6 +206,14 @@ const translations = {
   "[lblMailFail]": {
     1: "Mesajul tău nu a fost trimis. Te rugăm să dai refresh paginii!",
     2: "Your message was not sent. Please refresh the page!",
+  },
+  "[lblQuestionsHighlight]": {
+    1: "Întrebări",
+    2: "Frequent",
+  },
+  "[lblQuestions]": {
+    1: "frecvente",
+    2: "questions",
   },
 };
 

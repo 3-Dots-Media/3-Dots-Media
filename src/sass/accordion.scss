@@ -1,0 +1,50 @@
+@import "_main.scss";
+
+.accordion {
+  .card {
+    box-shadow: $box-shadow-effect;
+    border-radius: $border-radius !important;
+    margin-bottom: 20px;
+    border: none;
+    background-color: $pale-gray;
+
+    .card-header {
+      user-select: none;
+      background-color: $pale-gray;
+      font-size: 16px;
+      font-weight: 700;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include dots-transition();
+
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+
+      &:not(.collapsed) {
+        color: $primary-color;
+      }
+
+      &.collapsed {
+        .fa-arrow-left {
+          transform: rotate(-90deg);
+          @include dots-transition();
+        }
+      }
+      &:not(.collapsed) {
+        .fa-arrow-left {
+          transform: rotate(90deg);
+          @include dots-transition();
+        }
+      }
+    }
+
+    .card-body {
+      background-color: $pale-gray;
+    }
+  }
+}

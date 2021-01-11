@@ -181,7 +181,7 @@
       ><i class="fas fa-2x fa-chevron-up"></i
     ></a>
 
-    <div id="home" class="jumbotron parallax">
+    <div id="home" class="parallax">
       <h1 class="company-text">
         <span data-translate="[lblYouNeed]">Ai nevoie de</span>
         <span
@@ -516,7 +516,7 @@
         </div>
       </section>
 
-      <section class="row section section-how-we-do">
+      <section id="our-team" class="row section">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -524,10 +524,134 @@
                 <div class="title">
                   <span
                     class="title-highlight"
-                    data-translate="[lblHowWeDoItHighlight]"
-                    >Cum</span
+                    data-translate="[lblQuestionsHighlight]"
+                    >Întrebări</span
                   >
-                  <span data-translate="[lblHowWeDoIt]">procedăm</span>
+                  <span data-translate="[lblQuestions]">frecvente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="accordion mt-5" id="questions">
+                <div class="card">
+                  <div
+                    class="card-header text-left"
+                    id="questionOne"
+                    data-toggle="collapse"
+                    data-target="#collapseQuestionOne"
+                    aria-expanded="true"
+                    aria-controls="collapseQuestionOne"
+                  >
+                    Collapsible Group Item #1
+                    <i class="fas fa-arrow-left"></i>
+                  </div>
+                  <div
+                    id="collapseQuestionOne"
+                    class="collapse show"
+                    aria-labelledby="questionOne"
+                    data-parent="#questions"
+                  >
+                    <div class="card-body text-left">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header text-left collapsed"
+                    id="questionTwo"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Collapsible Group Item #2
+                    <i class="fas fa-arrow-left"></i>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="questionTwo"
+                    data-parent="#questions"
+                  >
+                    <div class="card-body text-left">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header text-left collapsed"
+                    id="questionThree"
+                    data-toggle="collapse"
+                    data-target="#collapseQuestionThree"
+                    aria-expanded="false"
+                    aria-controls="collapseQuestionThree"
+                  >
+                    Collapsible Group Item #3
+                    <i class="fas fa-arrow-left"></i>
+                  </div>
+                  <div
+                    id="collapseQuestionThree"
+                    class="collapse"
+                    aria-labelledby="questionThree"
+                    data-parent="#questions"
+                  >
+                    <div class="card-body text-left">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row section section-how-we-do">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-header">
+                <div class="title">
+                  <span data-translate="[lblHowWeDoIt]">Cum</span>
+                  <span
+                    class="title-highlight"
+                    data-translate="[lblHowWeDoItHighlight]"
+                    >procedăm</span
+                  >
                 </div>
               </div>
             </div>
@@ -715,15 +839,15 @@
                   ></textarea>
                 </div>
                 <div id="form-result">
-                <button
-                  id="send-mail"
-                  type="submit"
-                  class="btn btn-primary"
-                  data-translate="[btnSend]"
-                >
-                  Trimite
-                </button>
-                </form> 
+                  <button
+                    id="send-mail"
+                    type="submit"
+                    class="btn btn-primary"
+                    data-translate="[btnSend]"
+                  >
+                    Trimite
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -758,7 +882,9 @@
                 <a href="https://github.com/3-Dots-Media" class="social-link"
                   ><i class="fab fa-github"></i
                 ></a>
-                <a href="https://www.linkedin.com/company/3dots-media-iași" class="social-link"
+                <a
+                  href="https://www.linkedin.com/company/3dots-media-iași"
+                  class="social-link"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
