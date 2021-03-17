@@ -5,6 +5,7 @@ import "../sass/inputs.scss";
 import "../sass/project.scss";
 import "../sass/style.scss";
 import "../sass/accordion.scss";
+import "../sass/wizard.scss";
 
 import "jquery";
 import "popper.js";
@@ -31,6 +32,7 @@ import {
   changeLanguage,
   changeTranslations,
 } from "./translation.js";
+import { initWizard } from "./wizard.js";
 
 window.onload = function () {
   initMap();
@@ -46,4 +48,5 @@ window.onload = function () {
   changeLanguage();
   changeTranslations();
   sendEmail();
+  initWizard();
 };

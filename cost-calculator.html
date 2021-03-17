@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+S<!DOCTYPE html>
 <html class="no-js" lang="ro">
   <head>
     <meta charset="utf-8" />
@@ -164,57 +164,81 @@
       </div>
     </div>
 
-    <div
-      class="modal fade modal-fullscreen"
-      id="modal-fullscreen"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true"
-                ><i class="fas fa-times close-project"></i
-              ></span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container" id="project-container"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container-fluid">
-      <section class="row section section-project">
-        <div class="title">
-          <span
-            class="title-highlight"
-            data-translate="[lblOurProjectsHighlight]"
-            >Proiectele</span
-          >
-          <span data-translate="[lblOurProjects]">noastre</span>
-        </div>
-      </section>
-
-      <section class="row section">
+      <section class="row section mt-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <ul class="nav nav-pills" id="pills-tab" role="tablist"></ul>
-              <div
-                class="tab-content"
-                id="pills-tabContent"
-                data-row="4"
-                data-effect="true"
-              ></div>
+              <div class="section-header">
+                <div class="title">
+                  <span data-translate="[lblCalculatorServices]"
+                    >Calculator</span
+                  >
+                  <span
+                    class="title-highlight"
+                    data-translate="[lblCalculatorServicesHighlight]"
+                    >servicii</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="wizard-container mt-5">
+                <div>
+                  <div class="col-12 wizard-step active">
+                    <div class="wizard-title">
+                      De ce tip de servicii aveti nevoie?
+                    </div>
+                    <div class="wizard-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12" id="services">
+                          <div class="service">
+                            <img
+                              class="img img-responsive image"
+                              src="assets/cost-calculator/website.svg"
+                              alt="website"
+                            />
+                            <div class="name">Site</div>
+                            <div class="price">700 lei</div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="service">
+                            <img
+                              class="img img-responsive image"
+                              src="assets/cost-calculator/branding.svg"
+                              alt="branding"
+                            />
+                            <div class="name">Branding</div>
+                            <div class="price">500 lei</div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="service">
+                            <img
+                              class="img img-responsive image"
+                              src="assets/cost-calculator/social-media.svg"
+                              alt="social-media"
+                            />
+                            <div class="name">Social media</div>
+                            <div class="price">300 lei</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wizard-footer">
+                      <button class="btn btn-primary next">
+                        Pasul urmator
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-12 wizard-step">Step 2</div>
+                  <div class="col-12 wizard-step">Step 3</div>
+                  <div class="col-12 wizard-step">Step 4</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

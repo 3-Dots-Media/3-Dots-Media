@@ -215,6 +215,14 @@ const translations = {
     1: "frecvente",
     2: "questions",
   },
+  "[lblCalculatorServices]": {
+    1: "Calculator",
+    2: "Services",
+  },
+  "[lblCalculatorServicesHighlight]": {
+    1: "servicii",
+    2: "calculator",
+  },
 };
 
 export default translations;

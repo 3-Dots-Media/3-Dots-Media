@@ -1,0 +1,59 @@
+@import "_main.scss";
+
+.wizard-container {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  .wizard-step {
+    padding: 30px 0px;
+    @include dots-transition();
+
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .wizard-title {
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+
+    .wizard-body {
+      padding-bottom: 20px;
+
+      .service {
+        font-size: 20px;
+        color: $primary-color;
+        display: inline-block;
+        padding: 20px 40px;
+        border-radius: $border-radius;
+        filter: grayscale(1);
+        @include dots-transition();
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: $box-shadow;
+        }
+
+        &.selected {
+          box-shadow: $box-shadow;
+          filter: grayscale(0);
+        }
+
+        .image {
+          width: 100px;
+          height: 100px;
+        }
+
+        .name {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .wizard-footer {
+    }
+  }
+}
