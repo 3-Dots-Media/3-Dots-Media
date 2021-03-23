@@ -1,5 +1,11 @@
 @import "_main.scss";
 
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  box-shadow: none !important;
+}
+
 .dots-btn {
   display: inline-block;
   font-weight: normal;
@@ -36,14 +42,13 @@
   }
 }
 
-.dots-btn-outline-light {
-  border-radius: $border-radius-size;
-  color: $contrast-color;
-  border-color: $contrast-color;
+.dots-btn-outline {
+  color: $black !important;
+  border-color: $primary-color !important;
+  @include dots-transition();
 
   &:hover {
-    color: $primary-color;
-    background-color: $contrast-color;
+    color: $primary-color !important;
   }
 }
 

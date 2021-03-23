@@ -15,6 +15,10 @@ const translations = {
     1: "Despre noi",
     2: "About us",
   },
+  "[menuOurPrices]": {
+    1: "Prețuri",
+    2: "Prices",
+  },
   "[menuContact]": {
     1: "Contact",
     2: "Contact",
@@ -206,6 +210,54 @@ const translations = {
   "[lblMailFail]": {
     1: "Mesajul tău nu a fost trimis. Te rugăm să dai refresh paginii!",
     2: "Your message was not sent. Please refresh the page!",
+  },
+  "[lblOurPrices]": {
+    1: "Prețurile",
+    2: "Our",
+  },
+  "[lblOurPricesHighlight]": {
+    1: "noastre",
+    2: "prices",
+  },
+  "[btnContactUs]": {
+    1: "Contactează-ne",
+    2: "Contact us",
+  },
+  "[lblCustomServices]": {
+    1: "Servicii custom",
+    2: "Custom services",
+  },
+  "[lblCustomServicesDescription]": {
+    1: "Dacă ceea ce cauți este un pachet custom sau ai nevoie de o parte din servicii",
+    2: "If what you are looking for is a custom package or you need some services",
+  },
+  "[lblWebGraphicDesign]": {
+    1: "Web graphic design",
+    2: "Web graphic design",
+  },
+  "[lblPresentationWebsite]": {
+    1: "Website de prezentare (2 pagini)",
+    2: "Presentation website (2 pages)",
+  },
+  "[lblHostingSupport]": {
+    1: "Asistență hosting",
+    2: "Hosting support",
+  },
+  "[lblEmailAresses]": {
+    1: "Setare adrese email business",
+    2: "Set business email addresses",
+  },
+  "[lblCreateLogo]": {
+    1: "Creare logo / Refresh logo",
+    2: "Create logo / Refresh logo",
+  },
+  "[lblSocialMediaPromote]": {
+    1: "Promovare social media (1 postare / săptămână)",
+    2: "Social media promotion (1 post / week)",
+  },
+  "[lblCustomScripts]": {
+    1: "Scripturi custom",
+    2: "Custom scripts",
   },
 };
 
